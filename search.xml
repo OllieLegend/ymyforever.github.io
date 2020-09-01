@@ -43,7 +43,98 @@
 <p>dir.index.htm?：带层次的文件路径</p>
 <p>uid=1：查询字符串</p>
 <p>ch1：片段标识符</p>
-]]></content>
+<h2 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h2><h3 id="HTTP不保存状态"><a href="#HTTP不保存状态" class="headerlink" title="HTTP不保存状态"></a>HTTP不保存状态</h3><p>HTTP协议是无状态协议，即每当有新的请求发送时，就会有对应的新响应产生，之前的一切请求和响应报文均不保留。这也导致了再保存登录状态时，需要引入Cookie技术保持状态。</p>
+<p>Cookie技术通过在请求和响应报文中写入Cookie信息控制客户端状态。</p>
+<p>传送过程：</p>
+<p>客户端—发送请求—服务器</p>
+<p>服务器—生成Cookie—客户端</p>
+<p>客户端—添加Cookie—服务器</p>
+<h3 id="HTTP方法"><a href="#HTTP方法" class="headerlink" title="HTTP方法"></a>HTTP方法</h3><table>
+<thead>
+<tr>
+<th align="center">名称</th>
+<th align="center">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">GET</td>
+<td align="center">请求访问已被URI识别的资源。返回指定资源经服务器解析后的响应内容。</td>
+</tr>
+<tr>
+<td align="center">POST</td>
+<td align="center">传输实体的主体，POST的目的是传输，而不是获取响应主体</td>
+</tr>
+<tr>
+<td align="center">PUT</td>
+<td align="center">传输文件，自身不带验证机制</td>
+</tr>
+<tr>
+<td align="center">HEAD</td>
+<td align="center">与GET方法相似，不返回报文主体，确认URI的有效性和资源更新的日期</td>
+</tr>
+<tr>
+<td align="center">DELETE</td>
+<td align="center">与PUT方法相反，请求URI删除指定资源，自身不带验证机制</td>
+</tr>
+<tr>
+<td align="center">OPTIONS</td>
+<td align="center">查询对指定资源支持的方法</td>
+</tr>
+<tr>
+<td align="center">TRACE</td>
+<td align="center">让Web服务器将请求通信环回给客户端</td>
+</tr>
+<tr>
+<td align="center">CONNECT</td>
+<td align="center">要求在与代理服务器通信时建立隧道</td>
+</tr>
+</tbody></table>
+<h3 id="HTTP连接特点"><a href="#HTTP连接特点" class="headerlink" title="HTTP连接特点"></a>HTTP连接特点</h3><ol>
+<li>持久连接：减少TCP连接的重复建立和断开造成的额外开销</li>
+<li>管线化：并行发送多个请求</li>
+</ol>
+<h2 id="HTTP报文详解"><a href="#HTTP报文详解" class="headerlink" title="HTTP报文详解"></a>HTTP报文详解</h2><p>什么是HTTP报文？</p>
+<h3 id="HTTP报文"><a href="#HTTP报文" class="headerlink" title="HTTP报文"></a>HTTP报文</h3><p>HTTP报文由报文首部、空行、报文主体构成。</p>
+<p><strong>请求报文</strong>是客户端的HTTP报文</p>
+<blockquote>
+<p> POST /form/entry HTTP/1.1</p>
+</blockquote>
+<p>POST：请求方法</p>
+<p>/form/entry：请求URI</p>
+<p>HTTP/1.1：协议版本</p>
+<p><strong>响应报文</strong>是服务器端的HTTP报文</p>
+<blockquote>
+<p>HTTP/1.1 200 OK</p>
+</blockquote>
+<p>HTTP/1.1：协议版本</p>
+<p>200：状态码</p>
+<p>OK：状态码的原因短语</p>
+<h4 id="报文首部"><a href="#报文首部" class="headerlink" title="报文首部"></a>报文首部</h4><p>请求报文和响应报文的首部内容由以下数据组成：</p>
+<ul>
+<li>请求行：请求方法、请求URI、HTTP版本</li>
+<li>状态行：状态码、原因短语、HTTP版本</li>
+<li>首部字段：包含表示请求和响应的各种条件和属性的各类首部</li>
+<li>其他：Cookie等</li>
+</ul>
+<h3 id="编码"><a href="#编码" class="headerlink" title="编码"></a>编码</h3><p>在了解编码的概念之前，首先需要明白报文和实体的差别。</p>
+<ul>
+<li>报文：HTTP通信中的基本单位</li>
+<li>实体：作为请求或响应的有效载荷数据被传输，包括实体首部和实体主体。</li>
+</ul>
+<p>HTTP报文的主体用于传输实体主体。</p>
+<p>通常报文主体等于实体主体，只有传输中进行编码时，实体内容发生变化，与报文主体产生差异。</p>
+<p>编码有以下几种：</p>
+<ol>
+<li>内容编码：应用在实体内容上，压缩传输</li>
+<li>分块传输编码：将实体主体分成多个部分发往客户端</li>
+</ol>
+<h3 id="内容协商机制"><a href="#内容协商机制" class="headerlink" title="内容协商机制"></a>内容协商机制</h3><p>内容协商机制即客户端、服务器端就响应的资源内容进行交涉，提供给客户端最合适的资源。</p>
+<ol>
+<li>服务器驱动协商：由服务器端进行内容协商</li>
+<li>客户端驱动协商：由客户端进行内容协商</li>
+<li>透明协商：上述两种方法的一种结合体。</li>
+</ol>
+<h2 id="返回结果的HTTP状态码"><a href="#返回结果的HTTP状态码" class="headerlink" title="返回结果的HTTP状态码"></a>返回结果的HTTP状态码</h2>]]></content>
       <tags>
         <tag>home</tag>
       </tags>
