@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HelloWorld!</title>
-    <url>/2020/08/29/HelloWorld/</url>
-    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
-<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>HTTP协议</title>
     <url>/2020/08/30/HTTP%E5%8D%8F%E8%AE%AE/</url>
     <content><![CDATA[<h2 id="网络基础"><a href="#网络基础" class="headerlink" title="网络基础"></a>网络基础</h2><p>三项WWW构建技术：</p>
@@ -272,6 +265,27 @@
       <tags>
         <tag>home</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>HelloWorld!</title>
+    <url>/2020/08/29/HelloWorld/</url>
+    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
+<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>aDream</title>
+    <url>/2020/09/15/aDream/</url>
+    <content><![CDATA[<p>为什么会做这样的一场梦呢？</p>
+<p>为什么做了还让我醒来呢？</p>
+<p>这大概是我最不愿意醒来的梦吧。</p>
+<p>求不得，求不得，求不得。</p>
+<p>小的时候也做过这种怅然若失的梦，那个时候想要漂亮的文具，现在呢，想要完美的感情。</p>
+<p>不过是想要得到偶像的认可罢了。</p>
+<p>认可是自己给的，不要再傻了。</p>
+<p>加油吧！</p>
+<p>最后，真好，我还有这一方自由乐园。</p>
+]]></content>
   </entry>
   <entry>
     <title>littletalk</title>
