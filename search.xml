@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HelloWorld!</title>
+    <url>/2020/08/29/HelloWorld/</url>
+    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
+<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Computer Networks and the Internet</title>
     <url>/2020/09/16/Internet/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>开始读这本神奇的书了，嗯，英文版，嗯，八百多页。在这期间不打算开新的书了，这些足够我读一段时间了。</p>
@@ -33,13 +40,6 @@
 <h2 id="2-网络的边缘"><a href="#2-网络的边缘" class="headerlink" title="2. 网络的边缘"></a>2. 网络的边缘</h2><p>什么是网络的边缘？</p>
 <p>网络的边缘包括上文中提到的各种终端和主机。它们在整个网络中处于边缘位置，所以称为网络的边缘。</p>
 <h3 id="2-1-网络的边缘怎么连接网络？"><a href="#2-1-网络的边缘怎么连接网络？" class="headerlink" title="2.1 网络的边缘怎么连接网络？"></a>2.1 网络的边缘怎么连接网络？</h3>]]></content>
-  </entry>
-  <entry>
-    <title>HelloWorld!</title>
-    <url>/2020/08/29/HelloWorld/</url>
-    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
-<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
-]]></content>
   </entry>
   <entry>
     <title>aDream</title>
@@ -89,6 +89,7 @@
 <li>指定文档地址的URL</li>
 </ul>
 <h3 id="1-1-TCP-IP"><a href="#1-1-TCP-IP" class="headerlink" title="1.1 TCP/IP"></a>1.1 TCP/IP</h3><p>TCP/IP是互联网相关的各类协议族的总称。按照层次可分为如下四层</p>
+<p>&lt;! –more–&gt;</p>
 <ol>
 <li>应用层：向用户提供应用服务时通信的活动，包括FTP、DNS、HTTP协议</li>
 <li>传输层：提供处于网络连接中两台计算机间的数据传输，包括TCP、UDP（TCP首部）</li>
