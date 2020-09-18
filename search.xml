@@ -44,48 +44,6 @@
 <h3 id="2-1-网络的边缘怎么连接网络？"><a href="#2-1-网络的边缘怎么连接网络？" class="headerlink" title="2.1 网络的边缘怎么连接网络？"></a>2.1 网络的边缘怎么连接网络？</h3>]]></content>
   </entry>
   <entry>
-    <title>aDream</title>
-    <url>/2020/09/15/aDream/</url>
-    <content><![CDATA[<p>为什么会做这样的一场梦呢？</p>
-<p>为什么做了还让我醒来呢？</p>
-<p>这大概是我最不愿意醒来的梦吧。</p>
-<a id="more"></a>
-
-<p>求不得，求不得，求不得。</p>
-<p>小的时候也做过这种怅然若失的梦，那个时候想要漂亮的文具，现在呢，想要完美的感情。</p>
-<p>不过是想要得到偶像的认可罢了。</p>
-<p>认可是自己给的，不要再傻了。</p>
-<p>加油吧！</p>
-<p>最后，真好，我还有这一方自由乐园。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>littletalk</title>
-    <url>/2020/09/14/littletalk/</url>
-    <content><![CDATA[<p>也许这就是偶像吧。每一次新的发现都能给我很大的精神震撼。</p>
-<blockquote>
-<p>我一直以为庸人才应当在规则中生活，我这种疯子才应当指定规则。</p>
-</blockquote>
-<blockquote>
-<p>人生短暂，我们来不及循规蹈矩。</p>
-</blockquote>
-<blockquote>
-<p>我的生活永远与众不同。</p>
-</blockquote>
-<p>这是多么狂妄自大的话啊，从我认识的其他任何一个人嘴里说出来都显得如此违和，只有你，你配得上这句话。</p>
-<a id="more"></a>
-
-<p>我是一个在规则内循规蹈矩惯了的人，甚至利用规则谋求自己的利益。也是为了父母的规则，因为恐惧，恐惧父母得知女儿竟然和女生搅在一起时，那对我是灭顶之灾。</p>
-<p>所以我选择了放弃，长痛不如短痛的放弃。我还爱吗？我告诉自己不爱了。</p>
-<p>大学两年来，碌碌无为，既没有增长专业知识，也没有做出什么了不起的事情。我只是校园里千万颗齿轮里的一个，大齿轮，小齿轮，都是齿轮而已。</p>
-<p>仰山之高，往往自惭形秽。可是功夫没到家，你没有资格。</p>
-<p>对自己狠一点，再狠一点，你想要的，没人会给你，除了自己。</p>
-<p>成为盖世英雄，而不要傻傻在原地等着。</p>
-<p>你要的认可与肯定，只有自己能给你。</p>
-<p>循此苦旅，循此苦旅。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>HTTP协议</title>
     <url>/2020/08/30/HTTP%E5%8D%8F%E8%AE%AE/</url>
     <content><![CDATA[<h2 id="1-网络基础"><a href="#1-网络基础" class="headerlink" title="1. 网络基础"></a>1. 网络基础</h2><p>三项WWW构建技术：</p>
@@ -402,9 +360,80 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">客户端-&gt;服务器: 发送已登陆信息</span><br><span class="line">服务器-&gt;客户端: 向用户发放Session ID，记录认证状态</span><br><span class="line">客户端-&gt;服务器: 发送包含Session ID的Cookie</span><br></pre></td></tr></table></figure>
 
 <p>由于认证依赖于Session ID,所以要确保Session ID的安全性。</p>
+<h2 id="9-基于HTTP的功能追加协议"><a href="#9-基于HTTP的功能追加协议" class="headerlink" title="9. 基于HTTP的功能追加协议"></a>9. 基于HTTP的功能追加协议</h2><h3 id="9-1-基于HTTP的协议"><a href="#9-1-基于HTTP的协议" class="headerlink" title="9.1 基于HTTP的协议"></a>9.1 基于HTTP的协议</h3><p>建立HTTP标准规范时，制定者主要是想把HTTP当作传输HTML文档的协议，但是没想到大家那么喜欢HTTP，并用它做了许多事情，Web传输的对象也从单纯的HTML变得多元化。但是这个时候HTTP协议已经限制了Web的性能，但是HTTP协议已经流行开来了，因此不能抛弃HTTP协议，为了弥补不足，就出台了一系列新的协议，添加了新的功能。</p>
+<h3 id="9-2-消除HTTP瓶颈的SPDY"><a href="#9-2-消除HTTP瓶颈的SPDY" class="headerlink" title="9.2 消除HTTP瓶颈的SPDY"></a>9.2 消除HTTP瓶颈的SPDY</h3><p>HTTP的瓶颈？？？好大的口气小老弟！HTTP有什么瓶颈呢？</p>
+<h4 id="9-2-1-HTTP的瓶颈"><a href="#9-2-1-HTTP的瓶颈" class="headerlink" title="9.2.1 HTTP的瓶颈"></a>9.2.1 HTTP的瓶颈</h4><p>首先需要充分理解瓶颈这个词，瓶颈并不是坏的，只是不够好。在Web的发展中，出现了Facebook等SNS网站，用户会实时公开发布信息，但为了在客户端实时更新，就需要从客户端进行频繁的请求，<strong>发送大量重复的信息</strong>，而客户端不管是否有信息更新，都要把数据全部发送一次，造成通信效率的低下。</p>
+<p>这种问题对于用户和开发者都是难以忍受的。为了解决这个问题，大佬们提出了几种解决方法：</p>
+<p><strong>Ajax的解决方法</strong></p>
+<p>Ajax即（Asynchronous JavaScript and XML，异步JavaScript与XML技术），利用JavaScript和DOM的操作，以达到<strong>局部Web页面替换</strong>加载的异步通信手段。</p>
+<p>艾玛！看到局部，是不是解决了上面重复信息发送的问题（滑稽）。</p>
+<p>BUT！Ajax还是实时地从服务器获取内容，产生大量请求的产生，也没有解决HTTP协议本身存在的问题。</p>
+<p>Ajax小老弟还是不太行，让我们看看下一个Comet同学。</p>
+<p><strong>Comet的解决方法</strong></p>
+<p>Comet小老弟换了一个角度解决问题，既然客户端搞不定，那就从服务器来嘛！与其等着客户端巴巴地来要，不如让服务器给客户端直接送过去。那该怎么送呢？</p>
+<p>上文中说过了，HTTP协议要求请求只能从客户端开始，服务器不能主动发送，是不是绝的无解了？</p>
+<p>但我们Comet小老弟是超凡绝伦的人中龙凤啊，既然客户端主动发送，那它来了之后我就扣着它，到我想发的时候，再把它送回去（即挂起）。</p>
+<p>欸，乍一听好有道理的样子，但是小老弟，你这样一直挂着人家，为了维持连接会消耗更多的资源！</p>
+<p>这时候SPDY看不下去了！这明显HTTP有问题，改它！</p>
+<h3 id="9-2-2-SPDY的设计与功能"><a href="#9-2-2-SPDY的设计与功能" class="headerlink" title="9.2.2 SPDY的设计与功能"></a>9.2.2 SPDY的设计与功能</h3><p>SPDY并没有在原来的内容上作修改，而是在应用层（HTTP）和传输层（TCP）之间，加上了一个新的 SPDY会话层。</p>
+<p>SPDY的实现还是一个很复杂的问题。咱们主要了解一下，SPDY实现了什么功能就可。</p>
+<ul>
+<li>多路复用流：通过单一的TCP连接，可以无限制处理多个HTTP请求</li>
+<li>赋予请求优先级：为请求逐个分配优先级顺序</li>
+<li>压缩HTTP首部：压缩HTTP请求和响应首部</li>
+<li>推送功能：支持服务器主动向客户端推送数据</li>
+<li>服务器提示功能：服务器主动提示客户端请求所需资源</li>
+</ul>
+<p>看来SPDY是不是很完美？人们也对SPDY抱有很大的期待，然而，然而，然而。把SPDY应用在实际的Web中并不是顺利的。而且SPDY只将单个域名的通信多路复用，当一个Web网站使用多个域名下的资源时，改善效果就会受到限制。</p>
+<h3 id="9-3-使用浏览器进行全双工通信的WebSocket"><a href="#9-3-使用浏览器进行全双工通信的WebSocket" class="headerlink" title="9.3 使用浏览器进行全双工通信的WebSocket"></a>9.3 使用浏览器进行全双工通信的WebSocket</h3><p>使用Ajax和Comet技术可以提升Web浏览速度，但若使用HTTP协议，就无法彻底解决瓶颈问题。后来，大佬们就放弃更改HTTP的方法了，实现了一套新的协议WebSocket。</p>
+<p>WebSocket究竟是个啥，竟然那么牛？</p>
+<h4 id="9-3-1-啥是WebSocket？"><a href="#9-3-1-啥是WebSocket？" class="headerlink" title="9.3.1 啥是WebSocket？"></a>9.3.1 啥是WebSocket？</h4><p>WebSocket即Web浏览器与Web服务器间的全双工通信标准。</p>
+<p>一旦服务器与客户端间建立起WebSocket协议的通信连接，</p>
 ]]></content>
       <tags>
         <tag>home</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>aDream</title>
+    <url>/2020/09/15/aDream/</url>
+    <content><![CDATA[<p>为什么会做这样的一场梦呢？</p>
+<p>为什么做了还让我醒来呢？</p>
+<p>这大概是我最不愿意醒来的梦吧。</p>
+<a id="more"></a>
+
+<p>求不得，求不得，求不得。</p>
+<p>小的时候也做过这种怅然若失的梦，那个时候想要漂亮的文具，现在呢，想要完美的感情。</p>
+<p>不过是想要得到偶像的认可罢了。</p>
+<p>认可是自己给的，不要再傻了。</p>
+<p>加油吧！</p>
+<p>最后，真好，我还有这一方自由乐园。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>littletalk</title>
+    <url>/2020/09/14/littletalk/</url>
+    <content><![CDATA[<p>也许这就是偶像吧。每一次新的发现都能给我很大的精神震撼。</p>
+<blockquote>
+<p>我一直以为庸人才应当在规则中生活，我这种疯子才应当指定规则。</p>
+</blockquote>
+<blockquote>
+<p>人生短暂，我们来不及循规蹈矩。</p>
+</blockquote>
+<blockquote>
+<p>我的生活永远与众不同。</p>
+</blockquote>
+<p>这是多么狂妄自大的话啊，从我认识的其他任何一个人嘴里说出来都显得如此违和，只有你，你配得上这句话。</p>
+<a id="more"></a>
+
+<p>我是一个在规则内循规蹈矩惯了的人，甚至利用规则谋求自己的利益。也是为了父母的规则，因为恐惧，恐惧父母得知女儿竟然和女生搅在一起时，那对我是灭顶之灾。</p>
+<p>所以我选择了放弃，长痛不如短痛的放弃。我还爱吗？我告诉自己不爱了。</p>
+<p>大学两年来，碌碌无为，既没有增长专业知识，也没有做出什么了不起的事情。我只是校园里千万颗齿轮里的一个，大齿轮，小齿轮，都是齿轮而已。</p>
+<p>仰山之高，往往自惭形秽。可是功夫没到家，你没有资格。</p>
+<p>对自己狠一点，再狠一点，你想要的，没人会给你，除了自己。</p>
+<p>成为盖世英雄，而不要傻傻在原地等着。</p>
+<p>你要的认可与肯定，只有自己能给你。</p>
+<p>循此苦旅，循此苦旅。</p>
+]]></content>
   </entry>
 </search>
