@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 5.1.1">
+<meta name="generator" content="Hexo 5.2.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -262,7 +262,6 @@
 </ul>
 <h3 id="1-1-TCP-IP"><a href="#1-1-TCP-IP" class="headerlink" title="1.1 TCP/IP"></a>1.1 TCP/IP</h3><p>TCP/IP是互联网相关的各类协议族的总称。按照层次可分为如下四层</p>
 <a id="more"></a>
-
 <ol>
 <li>应用层：向用户提供应用服务时通信的活动，包括FTP、DNS、HTTP协议</li>
 <li>传输层：提供处于网络连接中两台计算机间的数据传输，包括TCP、UDP（TCP首部）</li>
@@ -286,11 +285,11 @@
 <p>URL：统一资源定位符，表示资源地点，是URI的子集。</p>
 <p>绝对URI格式：</p>
 <blockquote>
-<p><a target="_blank" rel="noopener" href="http://user:pass@www.example.jp/dir/index.htm?uid=1#ch1">http://user:pass@www.example.jp:80/dir/index.htm?uid=1#ch1</a></p>
+<p><a target="_blank" rel="noopener" href="http://user:pass@www.example.jp:80/dir/index.htm?uid=1#ch1">http://user:pass@www.example.jp:80/dir/index.htm?uid=1#ch1</a></p>
 </blockquote>
 <p>其中</p>
 <p>http：：协议方案名</p>
-<p>user:pass：登录信息</p>
+<p>user\:pass：登录信息</p>
 <p>www(战略性).example.jp：服务器地址</p>
 <p>:80：服务器端口</p>
 <p>dir.index.htm?：带层次的文件路径</p>
@@ -302,46 +301,50 @@
 <p>客户端—发送请求—服务器</p>
 <p>服务器—生成Cookie—客户端</p>
 <p>客户端—添加Cookie—服务器</p>
-<h3 id="2-2-HTTP方法"><a href="#2-2-HTTP方法" class="headerlink" title="2.2 HTTP方法"></a>2.2 HTTP方法</h3><table>
+<h3 id="2-2-HTTP方法"><a href="#2-2-HTTP方法" class="headerlink" title="2.2 HTTP方法"></a>2.2 HTTP方法</h3><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">名称</th>
-<th align="center">说明</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">GET</td>
-<td align="center">请求访问已被URI识别的资源。返回指定资源经服务器解析后的响应内容。</td>
+<tbody>
+<tr>
+<td style="text-align:center">GET</td>
+<td style="text-align:center">请求访问已被URI识别的资源。返回指定资源经服务器解析后的响应内容。</td>
 </tr>
 <tr>
-<td align="center">POST</td>
-<td align="center">传输实体的主体，POST的目的是传输，而不是获取响应主体</td>
+<td style="text-align:center">POST</td>
+<td style="text-align:center">传输实体的主体，POST的目的是传输，而不是获取响应主体</td>
 </tr>
 <tr>
-<td align="center">PUT</td>
-<td align="center">传输文件，自身不带验证机制</td>
+<td style="text-align:center">PUT</td>
+<td style="text-align:center">传输文件，自身不带验证机制</td>
 </tr>
 <tr>
-<td align="center">HEAD</td>
-<td align="center">与GET方法相似，不返回报文主体，确认URI的有效性和资源更新的日期</td>
+<td style="text-align:center">HEAD</td>
+<td style="text-align:center">与GET方法相似，不返回报文主体，确认URI的有效性和资源更新的日期</td>
 </tr>
 <tr>
-<td align="center">DELETE</td>
-<td align="center">与PUT方法相反，请求URI删除指定资源，自身不带验证机制</td>
+<td style="text-align:center">DELETE</td>
+<td style="text-align:center">与PUT方法相反，请求URI删除指定资源，自身不带验证机制</td>
 </tr>
 <tr>
-<td align="center">OPTIONS</td>
-<td align="center">查询对指定资源支持的方法</td>
+<td style="text-align:center">OPTIONS</td>
+<td style="text-align:center">查询对指定资源支持的方法</td>
 </tr>
 <tr>
-<td align="center">TRACE</td>
-<td align="center">让Web服务器将请求通信环回给客户端</td>
+<td style="text-align:center">TRACE</td>
+<td style="text-align:center">让Web服务器将请求通信环回给客户端</td>
 </tr>
 <tr>
-<td align="center">CONNECT</td>
-<td align="center">要求在与代理服务器通信时建立隧道</td>
+<td style="text-align:center">CONNECT</td>
+<td style="text-align:center">要求在与代理服务器通信时建立隧道</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="2-3-HTTP连接特点"><a href="#2-3-HTTP连接特点" class="headerlink" title="2.3 HTTP连接特点"></a>2.3 HTTP连接特点</h3><ol>
 <li>持久连接：减少TCP连接的重复建立和断开造成的额外开销</li>
 <li>管线化：并行发送多个请求</li>
@@ -376,14 +379,16 @@
 <li>响应首部字段：服务器向客户端</li>
 <li>实体首部字段：针对报文实体部分使用</li>
 </ul>
-<h3 id="3-2-通用首部"><a href="#3-2-通用首部" class="headerlink" title="3.2 通用首部"></a>3.2 通用首部</h3><table>
+<h3 id="3-2-通用首部"><a href="#3-2-通用首部" class="headerlink" title="3.2 通用首部"></a>3.2 通用首部</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>字段名</th>
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Cache-Control</td>
 <td>控制缓存的工作机制</td>
 </tr>
@@ -419,7 +424,9 @@
 <td>Warning</td>
 <td>告知用户与缓存相关的问题的警告</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="3-3-编码"><a href="#3-3-编码" class="headerlink" title="3.3 编码"></a>3.3 编码</h3><p>在了解编码的概念之前，首先需要明白报文和实体的差别。</p>
 <ul>
 <li>报文：HTTP通信中的基本单位</li>
@@ -439,34 +446,38 @@
 <li>透明协商：上述两种方法的一种结合体。</li>
 </ol>
 <h2 id="4-返回结果的HTTP状态码"><a href="#4-返回结果的HTTP状态码" class="headerlink" title="4. 返回结果的HTTP状态码"></a>4. 返回结果的HTTP状态码</h2><p>状态码描述返回的请求结果，由3位数字和原因短语组成。3位数字中的第一位指定响应类别，后两位无分类。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">类别</th>
-<th align="center">原因短语</th>
+<th style="text-align:center">类别</th>
+<th style="text-align:center">原因短语</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">1XX（信息性状态码）</td>
-<td align="center">接收的请求正在处理</td>
+<tbody>
+<tr>
+<td style="text-align:center">1XX（信息性状态码）</td>
+<td style="text-align:center">接收的请求正在处理</td>
 </tr>
 <tr>
-<td align="center">2XX（成功状态码）</td>
-<td align="center">请求正常处理完毕</td>
+<td style="text-align:center">2XX（成功状态码）</td>
+<td style="text-align:center">请求正常处理完毕</td>
 </tr>
 <tr>
-<td align="center">3XX（重定向状态码）</td>
-<td align="center">需要进行附加操作以完成请求</td>
+<td style="text-align:center">3XX（重定向状态码）</td>
+<td style="text-align:center">需要进行附加操作以完成请求</td>
 </tr>
 <tr>
-<td align="center">4XX（客户端错误状态码）</td>
-<td align="center">服务器无法处理请求</td>
+<td style="text-align:center">4XX（客户端错误状态码）</td>
+<td style="text-align:center">服务器无法处理请求</td>
 </tr>
 <tr>
-<td align="center">5XX（服务器错误状态码）</td>
-<td align="center">服务器处理请求出错</td>
+<td style="text-align:center">5XX（服务器错误状态码）</td>
+<td style="text-align:center">服务器处理请求出错</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="4-1-2XX-成功"><a href="#4-1-2XX-成功" class="headerlink" title="4.1 2XX 成功"></a>4.1 2XX 成功</h3><ul>
 <li>200 OK</li>
 <li>204 No Content：成功处理。但返回的响应报文中不含实体主体</li>
@@ -549,14 +560,12 @@
 <p>下面就挨个了解一下吧！</p>
 <h3 id="7-2-BASIC认证"><a href="#7-2-BASIC认证" class="headerlink" title="7.2 BASIC认证"></a>7.2 BASIC认证</h3><p>BASIC认证在HTTP/1.0就定义了这种认证方式（大概在92年，比我大多了，哭了）。但是哦！现在还有一部分网站会使用这种认证方式！真的可以说经久不衰了！</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">客户端-&gt;服务器: 发送请求</span><br><span class="line">服务器-&gt;客户端: 返回状态码401告知客户端需要进行认证</span><br><span class="line">客户端-&gt;服务器: 用户ID和密码以Base64方式编码后发送</span><br><span class="line">服务器-&gt;客户端: 认证成功返回状态码200，失败返回401</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>可以看到，在BASIC认证方式中，并没有对账号、密码进行加密，只是进行了一次编码，因此BASIC认证在HTTP这种非加密通信线路上进行BASIC认证时，相当于裸奔。</p>
 <p>另外，使用BASIC认证时，一般的浏览器<strong>无法实现注销操作</strong>。这是啥意思，姐妹们想一下，你登陆了还轻易无法退出？？？离谱离谱，告辞！</p>
 <h3 id="7-3-DIGEST-认证"><a href="#7-3-DIGEST-认证" class="headerlink" title="7.3 DIGEST 认证"></a>7.3 DIGEST 认证</h3><p>DIGEST认证方式是在HTTP/1.1起开始增加的，其目的主要是为了弥补BASIC认证存在的弱点。因此其认证方式也采用相同的<strong>质询/响应（challenge/response）</strong>的方式，但是不会像BASIC那样把明文密码发送过去。</p>
 <p>那么它是怎样实现的呢？</p>
 <p>服务器在收到客户端的访问请求时，会向客户端发送一个<strong>随机生成的质询码</strong>，并告知客户端需要认证，客户端由质询码计算出<strong>响应码</strong>，发送到服务器。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">客户端-&gt;服务器: 发送请求</span><br><span class="line">服务器-&gt;客户端: 返回状态码401和随机生成的质询码告知客户端需要进行认证</span><br><span class="line">客户端-&gt;服务器: 发送摘要和由质询码计算出的响应码</span><br><span class="line">服务器-&gt;客户端: 认证成功返回状态码200，失败返回401</span><br></pre></td></tr></table></figure>
-
 <h3 id="7-4-SSL客户端认证"><a href="#7-4-SSL客户端认证" class="headerlink" title="7.4 SSL客户端认证"></a>7.4 SSL客户端认证</h3><p>SSL客户端认证就牛批了嗷~如果说BASIC和DIGEST只能验证账号、密码的话，那么只要密码泄露了，账号就不保了，但是SSL客户端认证可以解决这种问题。这是怎么做到的呢？？？？</p>
 <p>SSL客户端在进行认证时，通过证书完成，<strong>只有获得证书的客户端</strong>，才能与服务器建立通信。</p>
 <p>由于只依靠证书进行认证还是有点单薄，因此在多数情况下会采用一种<strong>双因素认证</strong>方式。所谓的双因素其实很好理解，即客户端除了要提供密码这一认证因素外，还要提供其他认证因素，相当于双重保险。</p>
@@ -566,7 +575,6 @@
 <p>我们在上面已经学过了，HTTP是无状态协议**，即就算你之前已经登陆过一个网站，但这种登陆状态无法通过协议层保存下来。</p>
 <p>为了解决这个问题，大佬们使用Cookie来管理Session，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">客户端-&gt;服务器: 发送已登陆信息</span><br><span class="line">服务器-&gt;客户端: 向用户发放Session ID，记录认证状态</span><br><span class="line">客户端-&gt;服务器: 发送包含Session ID的Cookie</span><br></pre></td></tr></table></figure>
-
 <p>由于认证依赖于Session ID,所以要确保Session ID的安全性。</p>
 <h2 id="8-基于HTTP的功能追加协议"><a href="#8-基于HTTP的功能追加协议" class="headerlink" title="8. 基于HTTP的功能追加协议"></a>8. 基于HTTP的功能追加协议</h2><h3 id="8-1-基于HTTP的协议"><a href="#8-1-基于HTTP的协议" class="headerlink" title="8.1 基于HTTP的协议"></a>8.1 基于HTTP的协议</h3><p>建立HTTP标准规范时，制定者主要是想把HTTP当作传输HTML文档的协议，但是没想到大家那么喜欢HTTP，并用它做了许多事情，Web传输的对象也从单纯的HTML变得多元化。但是这个时候HTTP协议已经限制了Web的性能，但是HTTP协议已经流行开来了，因此不能抛弃HTTP协议，为了弥补不足，就出台了一系列新的协议，添加了新的功能。</p>
 <h3 id="8-2-消除HTTP瓶颈的SPDY"><a href="#8-2-消除HTTP瓶颈的SPDY" class="headerlink" title="8.2 消除HTTP瓶颈的SPDY"></a>8.2 消除HTTP瓶颈的SPDY</h3><p>HTTP的瓶颈？？？好大的口气小老弟！HTTP有什么瓶颈呢？</p>
@@ -714,7 +722,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -805,6 +813,8 @@
 
 
 
+
+  
 
   
 

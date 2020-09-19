@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HelloWorld!</title>
-    <url>/2020/08/29/HelloWorld/</url>
-    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
-<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>Computer Networks and the Internet</title>
     <url>/2020/09/16/Internet/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>开始读这本神奇的书了，嗯，英文版，嗯，八百多页。在这期间不打算开新的书了，这些足够我读一段时间了。</p>
@@ -15,7 +8,6 @@
 <p>同学说800多页这学期读不完的，每天20页还需要一个多月去读。首先呢，这本书不一定要读完，重点的是靠这本书快速入门；开了这么多书，你一定要坚持住嗷~</p>
 <p>读英文真的需要心无旁骛，不然一会就不知道读的是啥了，哭哭！</p>
 <a id="more"></a>
-
 <h2 id="1-什么是Internet？"><a href="#1-什么是Internet？" class="headerlink" title="1  什么是Internet？"></a>1  什么是Internet？</h2><h3 id="1-1-Internet的组成"><a href="#1-1-Internet的组成" class="headerlink" title="1.1 Internet的组成"></a>1.1 Internet的组成</h3><p>Internet是一种计算机网络将世界上的计算装置连接起来。所有被连接起来的装置称为主机或终端系统。</p>
 <p>终端系统由communication links和packet switiches组成的网络相连。</p>
 <ul>
@@ -44,36 +36,10 @@
 <h3 id="2-1-网络的边缘怎么连接网络？"><a href="#2-1-网络的边缘怎么连接网络？" class="headerlink" title="2.1 网络的边缘怎么连接网络？"></a>2.1 网络的边缘怎么连接网络？</h3>]]></content>
   </entry>
   <entry>
-    <title>计算机网络测验1</title>
-    <url>/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/</url>
-    <content><![CDATA[<p>今天来写一些计算机网络的测验题，看起来还是和平常的测验题很不一样的，遂打算记录在博客上。</p>
-<h2 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a>1. 问题描述</h2><p>从源主机发送$8 \times 10^6$bit的长消息，传输过程中链路带宽为2Mbps，忽略<strong>传播</strong>、排队和处理延时。</p>
-<p>数据传输过程如下:</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">graph LR</span><br><span class="line">A(source) --&gt; B(packet switch)</span><br><span class="line">B --&gt; C(packet switch)</span><br><span class="line">C --&gt; D(Destination)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
-
-<h3 id="1-1-问题a-1"><a href="#1-1-问题a-1" class="headerlink" title="1.1 问题a(1)"></a>1.1 问题a(1)</h3><p>考虑不分组的情况下将消息从源主机发送到目的地，请问将消息<strong>从源主机发送到第一个交换机</strong>需要多长时间？</p>
-<p><strong>答：</strong>信息的大小已知，链路带宽已知，由于不考虑传播时延，因此只需考虑发送时延，其中链路带宽即数字信通所能传达的“最高数据率”。则时间为：$$t=\frac{8 \times 10^6}{2 \times10^6}=4s $$</p>
-<h3 id="1-2-问题a-2"><a href="#1-2-问题a-2" class="headerlink" title="1.2 问题a(2)"></a>1.2 问题a(2)</h3><p>当每个交换机都是用存储转发分组交换时，将消息从源主机发送到目标主机的总时间是多少？</p>
-<p><strong>答：</strong>由问题1已知，从源主机到第一个交换机的时间为4s，则从源主机到目标主机的总时间是$$4 \times 4 =16s$$。</p>
-<p>在上述基础上，假设消息被分割成800个数据包每个数据包长度为10000比特。</p>
-<h3 id="1-3-问题b-1"><a href="#1-3-问题b-1" class="headerlink" title="1.3 问题b(1)"></a>1.3 问题b(1)</h3><p>将第一个包从源主机移动到第一个交换机需要多长时间？</p>
-<p><strong>答：</strong>$$t=\frac{1 \times 10^4}{2 \times 10^6}=5ms$$</p>
-<h3 id="1-4-问题b-2"><a href="#1-4-问题b-2" class="headerlink" title="1.4 问题b(2)"></a>1.4 问题b(2)</h3><p>当第一个交换机向第二个交换机发送第一个包时，第二个包从源主机向第一个交换机发送，请问在什么时间第一个交换机能够完全接收第二个数据包？</p>
-<p><strong>答：</strong>由于每个链路带宽相同，不考虑传播、排队、处理时延，因此在5ms后，第一个交换机能够完全接收第二个数据包。</p>
-<h3 id="1-5-问题c"><a href="#1-5-问题c" class="headerlink" title="1.5 问题c"></a>1.5 问题c</h3><p>使用消息分段时，将文件从源主机发送到目标主机需要多长时间？将结果与在(a)部分的答案进行比较并讨论。</p>
-<p><strong>答：</strong>使用消息分段时，初始时，只有源主机发送包，接着，源主机和第一个交换机发送包，最后源主机、两个交换机都在发送包。在发送接近结束时，源主机、第一个交换机、第二个交换机依次停止发送。</p>
-<p>因此，将文件从源主机发送到目标主机需要$$t=\frac{800 \times 3-1-2-1-2}{3} \times 5 + 4 \times 5=$$ 4.01s &lt;16s </p>
-<p>与上述计算出来的答案进行比较，消息分段显著降低了消息发送的总时间。另外，消息分段发送的总时间接近于未分段发送一次的时间。由于分段发送初始时、结束时所占时间极少，信息在交换机间并行发送，可看作仅由源主机直接发送至目标主机。</p>
-<h3 id="1-6-问题d"><a href="#1-6-问题d" class="headerlink" title="1.6 问题d"></a>1.6 问题d</h3><p>除可以降低延迟外，使用消息分段还有什么优势?</p>
-<p><strong>答：</strong>1. 由于消息分段传输，因此在消息需要更新时，可以只发送更新的部分，提高效率。</p>
-<p>​        2. 由于分段之后数据短小，适合采用优先级策略，发送一些紧急数据</p>
-<h3 id="1-7-问题e"><a href="#1-7-问题e" class="headerlink" title="1.7 问题e"></a>1.7 问题e</h3><p>讨论消息分段的缺点。</p>
-<p>答：1. 消息分段增加了转发的次数和时延，要求结点交换机具有更强的处理能力。</p>
-<ol start="2">
-<li>由于消息分段，每段要加上编号等信息，总的传输信息量增大了。</li>
-</ol>
+    <title>HelloWorld!</title>
+    <url>/2020/08/29/HelloWorld/</url>
+    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
+<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
 ]]></content>
   </entry>
   <entry>
@@ -87,7 +53,6 @@
 </ul>
 <h3 id="1-1-TCP-IP"><a href="#1-1-TCP-IP" class="headerlink" title="1.1 TCP/IP"></a>1.1 TCP/IP</h3><p>TCP/IP是互联网相关的各类协议族的总称。按照层次可分为如下四层</p>
 <a id="more"></a>
-
 <ol>
 <li>应用层：向用户提供应用服务时通信的活动，包括FTP、DNS、HTTP协议</li>
 <li>传输层：提供处于网络连接中两台计算机间的数据传输，包括TCP、UDP（TCP首部）</li>
@@ -111,11 +76,11 @@
 <p>URL：统一资源定位符，表示资源地点，是URI的子集。</p>
 <p>绝对URI格式：</p>
 <blockquote>
-<p><a href="http://user:pass@www.example.jp/dir/index.htm?uid=1#ch1">http://user:pass@www.example.jp:80/dir/index.htm?uid=1#ch1</a></p>
+<p><a href="http://user:pass@www.example.jp:80/dir/index.htm?uid=1#ch1">http://user:pass@www.example.jp:80/dir/index.htm?uid=1#ch1</a></p>
 </blockquote>
 <p>其中</p>
 <p>http：：协议方案名</p>
-<p>user:pass：登录信息</p>
+<p>user\:pass：登录信息</p>
 <p>www(战略性).example.jp：服务器地址</p>
 <p>:80：服务器端口</p>
 <p>dir.index.htm?：带层次的文件路径</p>
@@ -127,46 +92,50 @@
 <p>客户端—发送请求—服务器</p>
 <p>服务器—生成Cookie—客户端</p>
 <p>客户端—添加Cookie—服务器</p>
-<h3 id="2-2-HTTP方法"><a href="#2-2-HTTP方法" class="headerlink" title="2.2 HTTP方法"></a>2.2 HTTP方法</h3><table>
+<h3 id="2-2-HTTP方法"><a href="#2-2-HTTP方法" class="headerlink" title="2.2 HTTP方法"></a>2.2 HTTP方法</h3><div class="table-container">
+<table>
 <thead>
 <tr>
-<th align="center">名称</th>
-<th align="center">说明</th>
+<th style="text-align:center">名称</th>
+<th style="text-align:center">说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">GET</td>
-<td align="center">请求访问已被URI识别的资源。返回指定资源经服务器解析后的响应内容。</td>
+<tbody>
+<tr>
+<td style="text-align:center">GET</td>
+<td style="text-align:center">请求访问已被URI识别的资源。返回指定资源经服务器解析后的响应内容。</td>
 </tr>
 <tr>
-<td align="center">POST</td>
-<td align="center">传输实体的主体，POST的目的是传输，而不是获取响应主体</td>
+<td style="text-align:center">POST</td>
+<td style="text-align:center">传输实体的主体，POST的目的是传输，而不是获取响应主体</td>
 </tr>
 <tr>
-<td align="center">PUT</td>
-<td align="center">传输文件，自身不带验证机制</td>
+<td style="text-align:center">PUT</td>
+<td style="text-align:center">传输文件，自身不带验证机制</td>
 </tr>
 <tr>
-<td align="center">HEAD</td>
-<td align="center">与GET方法相似，不返回报文主体，确认URI的有效性和资源更新的日期</td>
+<td style="text-align:center">HEAD</td>
+<td style="text-align:center">与GET方法相似，不返回报文主体，确认URI的有效性和资源更新的日期</td>
 </tr>
 <tr>
-<td align="center">DELETE</td>
-<td align="center">与PUT方法相反，请求URI删除指定资源，自身不带验证机制</td>
+<td style="text-align:center">DELETE</td>
+<td style="text-align:center">与PUT方法相反，请求URI删除指定资源，自身不带验证机制</td>
 </tr>
 <tr>
-<td align="center">OPTIONS</td>
-<td align="center">查询对指定资源支持的方法</td>
+<td style="text-align:center">OPTIONS</td>
+<td style="text-align:center">查询对指定资源支持的方法</td>
 </tr>
 <tr>
-<td align="center">TRACE</td>
-<td align="center">让Web服务器将请求通信环回给客户端</td>
+<td style="text-align:center">TRACE</td>
+<td style="text-align:center">让Web服务器将请求通信环回给客户端</td>
 </tr>
 <tr>
-<td align="center">CONNECT</td>
-<td align="center">要求在与代理服务器通信时建立隧道</td>
+<td style="text-align:center">CONNECT</td>
+<td style="text-align:center">要求在与代理服务器通信时建立隧道</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="2-3-HTTP连接特点"><a href="#2-3-HTTP连接特点" class="headerlink" title="2.3 HTTP连接特点"></a>2.3 HTTP连接特点</h3><ol>
 <li>持久连接：减少TCP连接的重复建立和断开造成的额外开销</li>
 <li>管线化：并行发送多个请求</li>
@@ -201,14 +170,16 @@
 <li>响应首部字段：服务器向客户端</li>
 <li>实体首部字段：针对报文实体部分使用</li>
 </ul>
-<h3 id="3-2-通用首部"><a href="#3-2-通用首部" class="headerlink" title="3.2 通用首部"></a>3.2 通用首部</h3><table>
+<h3 id="3-2-通用首部"><a href="#3-2-通用首部" class="headerlink" title="3.2 通用首部"></a>3.2 通用首部</h3><div class="table-container">
+<table>
 <thead>
 <tr>
 <th>字段名</th>
 <th>说明</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>Cache-Control</td>
 <td>控制缓存的工作机制</td>
 </tr>
@@ -244,7 +215,9 @@
 <td>Warning</td>
 <td>告知用户与缓存相关的问题的警告</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="3-3-编码"><a href="#3-3-编码" class="headerlink" title="3.3 编码"></a>3.3 编码</h3><p>在了解编码的概念之前，首先需要明白报文和实体的差别。</p>
 <ul>
 <li>报文：HTTP通信中的基本单位</li>
@@ -264,34 +237,38 @@
 <li>透明协商：上述两种方法的一种结合体。</li>
 </ol>
 <h2 id="4-返回结果的HTTP状态码"><a href="#4-返回结果的HTTP状态码" class="headerlink" title="4. 返回结果的HTTP状态码"></a>4. 返回结果的HTTP状态码</h2><p>状态码描述返回的请求结果，由3位数字和原因短语组成。3位数字中的第一位指定响应类别，后两位无分类。</p>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="center">类别</th>
-<th align="center">原因短语</th>
+<th style="text-align:center">类别</th>
+<th style="text-align:center">原因短语</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">1XX（信息性状态码）</td>
-<td align="center">接收的请求正在处理</td>
+<tbody>
+<tr>
+<td style="text-align:center">1XX（信息性状态码）</td>
+<td style="text-align:center">接收的请求正在处理</td>
 </tr>
 <tr>
-<td align="center">2XX（成功状态码）</td>
-<td align="center">请求正常处理完毕</td>
+<td style="text-align:center">2XX（成功状态码）</td>
+<td style="text-align:center">请求正常处理完毕</td>
 </tr>
 <tr>
-<td align="center">3XX（重定向状态码）</td>
-<td align="center">需要进行附加操作以完成请求</td>
+<td style="text-align:center">3XX（重定向状态码）</td>
+<td style="text-align:center">需要进行附加操作以完成请求</td>
 </tr>
 <tr>
-<td align="center">4XX（客户端错误状态码）</td>
-<td align="center">服务器无法处理请求</td>
+<td style="text-align:center">4XX（客户端错误状态码）</td>
+<td style="text-align:center">服务器无法处理请求</td>
 </tr>
 <tr>
-<td align="center">5XX（服务器错误状态码）</td>
-<td align="center">服务器处理请求出错</td>
+<td style="text-align:center">5XX（服务器错误状态码）</td>
+<td style="text-align:center">服务器处理请求出错</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 <h3 id="4-1-2XX-成功"><a href="#4-1-2XX-成功" class="headerlink" title="4.1 2XX 成功"></a>4.1 2XX 成功</h3><ul>
 <li>200 OK</li>
 <li>204 No Content：成功处理。但返回的响应报文中不含实体主体</li>
@@ -374,14 +351,12 @@
 <p>下面就挨个了解一下吧！</p>
 <h3 id="7-2-BASIC认证"><a href="#7-2-BASIC认证" class="headerlink" title="7.2 BASIC认证"></a>7.2 BASIC认证</h3><p>BASIC认证在HTTP/1.0就定义了这种认证方式（大概在92年，比我大多了，哭了）。但是哦！现在还有一部分网站会使用这种认证方式！真的可以说经久不衰了！</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">客户端-&gt;服务器: 发送请求</span><br><span class="line">服务器-&gt;客户端: 返回状态码401告知客户端需要进行认证</span><br><span class="line">客户端-&gt;服务器: 用户ID和密码以Base64方式编码后发送</span><br><span class="line">服务器-&gt;客户端: 认证成功返回状态码200，失败返回401</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>可以看到，在BASIC认证方式中，并没有对账号、密码进行加密，只是进行了一次编码，因此BASIC认证在HTTP这种非加密通信线路上进行BASIC认证时，相当于裸奔。</p>
 <p>另外，使用BASIC认证时，一般的浏览器<strong>无法实现注销操作</strong>。这是啥意思，姐妹们想一下，你登陆了还轻易无法退出？？？离谱离谱，告辞！</p>
 <h3 id="7-3-DIGEST-认证"><a href="#7-3-DIGEST-认证" class="headerlink" title="7.3 DIGEST 认证"></a>7.3 DIGEST 认证</h3><p>DIGEST认证方式是在HTTP/1.1起开始增加的，其目的主要是为了弥补BASIC认证存在的弱点。因此其认证方式也采用相同的<strong>质询/响应（challenge/response）</strong>的方式，但是不会像BASIC那样把明文密码发送过去。</p>
 <p>那么它是怎样实现的呢？</p>
 <p>服务器在收到客户端的访问请求时，会向客户端发送一个<strong>随机生成的质询码</strong>，并告知客户端需要认证，客户端由质询码计算出<strong>响应码</strong>，发送到服务器。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">客户端-&gt;服务器: 发送请求</span><br><span class="line">服务器-&gt;客户端: 返回状态码401和随机生成的质询码告知客户端需要进行认证</span><br><span class="line">客户端-&gt;服务器: 发送摘要和由质询码计算出的响应码</span><br><span class="line">服务器-&gt;客户端: 认证成功返回状态码200，失败返回401</span><br></pre></td></tr></table></figure>
-
 <h3 id="7-4-SSL客户端认证"><a href="#7-4-SSL客户端认证" class="headerlink" title="7.4 SSL客户端认证"></a>7.4 SSL客户端认证</h3><p>SSL客户端认证就牛批了嗷~如果说BASIC和DIGEST只能验证账号、密码的话，那么只要密码泄露了，账号就不保了，但是SSL客户端认证可以解决这种问题。这是怎么做到的呢？？？？</p>
 <p>SSL客户端在进行认证时，通过证书完成，<strong>只有获得证书的客户端</strong>，才能与服务器建立通信。</p>
 <p>由于只依靠证书进行认证还是有点单薄，因此在多数情况下会采用一种<strong>双因素认证</strong>方式。所谓的双因素其实很好理解，即客户端除了要提供密码这一认证因素外，还要提供其他认证因素，相当于双重保险。</p>
@@ -391,7 +366,6 @@
 <p>我们在上面已经学过了，HTTP是无状态协议**，即就算你之前已经登陆过一个网站，但这种登陆状态无法通过协议层保存下来。</p>
 <p>为了解决这个问题，大佬们使用Cookie来管理Session，</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">客户端-&gt;服务器: 发送已登陆信息</span><br><span class="line">服务器-&gt;客户端: 向用户发放Session ID，记录认证状态</span><br><span class="line">客户端-&gt;服务器: 发送包含Session ID的Cookie</span><br></pre></td></tr></table></figure>
-
 <p>由于认证依赖于Session ID,所以要确保Session ID的安全性。</p>
 <h2 id="8-基于HTTP的功能追加协议"><a href="#8-基于HTTP的功能追加协议" class="headerlink" title="8. 基于HTTP的功能追加协议"></a>8. 基于HTTP的功能追加协议</h2><h3 id="8-1-基于HTTP的协议"><a href="#8-1-基于HTTP的协议" class="headerlink" title="8.1 基于HTTP的协议"></a>8.1 基于HTTP的协议</h3><p>建立HTTP标准规范时，制定者主要是想把HTTP当作传输HTML文档的协议，但是没想到大家那么喜欢HTTP，并用它做了许多事情，Web传输的对象也从单纯的HTML变得多元化。但是这个时候HTTP协议已经限制了Web的性能，但是HTTP协议已经流行开来了，因此不能抛弃HTTP协议，为了弥补不足，就出台了一系列新的协议，添加了新的功能。</p>
 <h3 id="8-2-消除HTTP瓶颈的SPDY"><a href="#8-2-消除HTTP瓶颈的SPDY" class="headerlink" title="8.2 消除HTTP瓶颈的SPDY"></a>8.2 消除HTTP瓶颈的SPDY</h3><p>HTTP的瓶颈？？？好大的口气小老弟！HTTP有什么瓶颈呢？</p>
