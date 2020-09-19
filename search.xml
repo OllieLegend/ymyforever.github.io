@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HelloWorld!</title>
+    <url>/2020/08/29/HelloWorld/</url>
+    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
+<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
+]]></content>
+  </entry>
+  <entry>
     <title>Computer Networks and the Internet</title>
     <url>/2020/09/16/Internet/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>开始读这本神奇的书了，嗯，英文版，嗯，八百多页。在这期间不打算开新的书了，这些足够我读一段时间了。</p>
@@ -36,10 +43,34 @@
 <h3 id="2-1-网络的边缘怎么连接网络？"><a href="#2-1-网络的边缘怎么连接网络？" class="headerlink" title="2.1 网络的边缘怎么连接网络？"></a>2.1 网络的边缘怎么连接网络？</h3>]]></content>
   </entry>
   <entry>
-    <title>HelloWorld!</title>
-    <url>/2020/08/29/HelloWorld/</url>
-    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
-<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
+    <title>计算机网络测验1</title>
+    <url>/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/</url>
+    <content><![CDATA[<p>今天来写一些计算机网络的测验题，看起来还是和平常的测验题很不一样的，遂打算记录在博客上。</p>
+<h2 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a>1. 问题描述</h2><p>从源主机发送$8 \times 10^6$bit的长消息，传输过程中链路带宽为2Mbps，忽略<strong>传播</strong>、排队和处理延时。</p>
+<p>数据传输过程如下:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">graph LR</span><br><span class="line">A(source) --&gt; B(packet switch)</span><br><span class="line">B --&gt; C(packet switch)</span><br><span class="line">C --&gt; D(Destination)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+<h3 id="1-1-问题a-1"><a href="#1-1-问题a-1" class="headerlink" title="1.1 问题a(1)"></a>1.1 问题a(1)</h3><p>考虑不分组的情况下将消息从源主机发送到目的地，请问将消息<strong>从源主机发送到第一个交换机</strong>需要多长时间？</p>
+<p><strong>答：</strong>信息的大小已知，链路带宽已知，由于不考虑传播时延，因此只需考虑发送时延，其中链路带宽即数字信通所能传达的“最高数据率”。则时间为：<script type="math/tex">t=\frac{8 \times 10^6}{2 \times10^6}=4s</script></p>
+<h3 id="1-2-问题a-2"><a href="#1-2-问题a-2" class="headerlink" title="1.2 问题a(2)"></a>1.2 问题a(2)</h3><p>当每个交换机都是用存储转发分组交换时，将消息从源主机发送到目标主机的总时间是多少？</p>
+<p><strong>答：</strong>由问题1已知，从源主机到第一个交换机的时间为4s，则从源主机到目标主机的总时间是<script type="math/tex">4 \times 4 =16s</script>。</p>
+<p>在上述基础上，假设消息被分割成800个数据包每个数据包长度为10000比特。</p>
+<h3 id="1-3-问题b-1"><a href="#1-3-问题b-1" class="headerlink" title="1.3 问题b(1)"></a>1.3 问题b(1)</h3><p>将第一个包从源主机移动到第一个交换机需要多长时间？</p>
+<p><strong>答：</strong><script type="math/tex">t=\frac{1 \times 10^4}{2 \times 10^6}=5ms</script></p>
+<h3 id="1-4-问题b-2"><a href="#1-4-问题b-2" class="headerlink" title="1.4 问题b(2)"></a>1.4 问题b(2)</h3><p>当第一个交换机向第二个交换机发送第一个包时，第二个包从源主机向第一个交换机发送，请问在什么时间第一个交换机能够完全接收第二个数据包？</p>
+<p><strong>答：</strong>由于每个链路带宽相同，不考虑传播、排队、处理时延，因此在5ms后，第一个交换机能够完全接收第二个数据包。</p>
+<h3 id="1-5-问题c"><a href="#1-5-问题c" class="headerlink" title="1.5 问题c"></a>1.5 问题c</h3><p>使用消息分段时，将文件从源主机发送到目标主机需要多长时间？将结果与在(a)部分的答案进行比较并讨论。</p>
+<p><strong>答：</strong>使用消息分段时，初始时，只有源主机发送包，接着，源主机和第一个交换机发送包，最后源主机、两个交换机都在发送包。在发送接近结束时，源主机、第一个交换机、第二个交换机依次停止发送。</p>
+<p>因此，将文件从源主机发送到目标主机需要<script type="math/tex">t=\frac{800 \times 3-1-2-1-2}{3} \times 5 + 4 \times 5=</script> 4.01s &lt;16s </p>
+<p>与上述计算出来的答案进行比较，消息分段显著降低了消息发送的总时间。另外，消息分段发送的总时间接近于未分段发送一次的时间。由于分段发送初始时、结束时所占时间极少，信息在交换机间并行发送，可看作仅由源主机直接发送至目标主机。</p>
+<h3 id="1-6-问题d"><a href="#1-6-问题d" class="headerlink" title="1.6 问题d"></a>1.6 问题d</h3><p>除可以降低延迟外，使用消息分段还有什么优势?</p>
+<p><strong>答：</strong>1. 由于消息分段传输，因此在消息需要更新时，可以只发送更新的部分，提高效率。</p>
+<p>​        2. 由于分段之后数据短小，适合采用优先级策略，发送一些紧急数据</p>
+<h3 id="1-7-问题e"><a href="#1-7-问题e" class="headerlink" title="1.7 问题e"></a>1.7 问题e</h3><p>讨论消息分段的缺点。</p>
+<p>答：1. 消息分段增加了转发的次数和时延，要求结点交换机具有更强的处理能力。</p>
+<ol>
+<li>由于消息分段，每段要加上编号等信息，总的传输信息量增大了。</li>
+</ol>
 ]]></content>
   </entry>
   <entry>
