@@ -254,7 +254,11 @@
           <p>今天来写一些计算机网络的测验题，看起来还是和平常的测验题很不一样的，遂打算记录在博客上。</p>
 <h2 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a>1. 问题描述</h2><p>从源主机发送$8 \times 10^6$bit的长消息，传输过程中链路带宽为2Mbps，忽略<strong>传播</strong>、排队和处理延时。</p>
 <p>数据传输过程如下:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">graph LR</span><br><span class="line">A(source) --&gt; B(packet switch)</span><br><span class="line">B --&gt; C(packet switch)</span><br><span class="line">C --&gt; D(Destination)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<pre class="mermaid">
+graph LR
+A(source) --> B(packet switch)
+B --> C(packet switch)
+C --> D(Destination)</pre>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/#more" rel="contents">
