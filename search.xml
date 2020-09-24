@@ -23,7 +23,7 @@ C --> D(Destination)</pre>
 <h3 id="1-1-问题a-1"><a href="#1-1-问题a-1" class="headerlink" title="1.1 问题a(1)"></a>1.1 问题a(1)</h3><p>考虑不分组的情况下将消息从源主机发送到目的地，请问将消息<strong>从源主机发送到第一个交换机</strong>需要多长时间？</p>
 <p><strong>答：</strong>信息的大小已知，链路带宽已知，由于不考虑传播时延，因此只需考虑发送时延，其中链路带宽即数字信通所能传达的“最高数据率”。则时间为：<script type="math/tex">t=\frac{8 \times 10^6}{2 \times10^6}=4s</script></p>
 <h3 id="1-2-问题a-2"><a href="#1-2-问题a-2" class="headerlink" title="1.2 问题a(2)"></a>1.2 问题a(2)</h3><p>当每个交换机都是用存储转发分组交换时，将消息从源主机发送到目标主机的总时间是多少？</p>
-<p><strong>答：</strong>由问题1已知，从源主机到第一个交换机的时间为4s，则从源主机到目标主机的总时间是<script type="math/tex">4 \times 4 =16s</script>。</p>
+<p><strong>答：</strong>由问题1已知，从源主机到第一个交换机的时间为4s，则从源主机到目标主机的总时间是<script type="math/tex">4 \times 3 =12s</script>。</p>
 <p>在上述基础上，假设消息被分割成800个数据包每个数据包长度为10000比特。</p>
 <h3 id="1-3-问题b-1"><a href="#1-3-问题b-1" class="headerlink" title="1.3 问题b(1)"></a>1.3 问题b(1)</h3><p>将第一个包从源主机移动到第一个交换机需要多长时间？</p>
 <p><strong>答：</strong><script type="math/tex">t=\frac{1 \times 10^4}{2 \times 10^6}=5ms</script></p>
@@ -31,7 +31,7 @@ C --> D(Destination)</pre>
 <p><strong>答：</strong>由于每个链路带宽相同，不考虑传播、排队、处理时延，因此在5ms后，第一个交换机能够完全接收第二个数据包。</p>
 <h3 id="1-5-问题c"><a href="#1-5-问题c" class="headerlink" title="1.5 问题c"></a>1.5 问题c</h3><p>使用消息分段时，将文件从源主机发送到目标主机需要多长时间？将结果与在(a)部分的答案进行比较并讨论。</p>
 <p><strong>答：</strong>使用消息分段时，初始时，只有源主机发送包，接着，源主机和第一个交换机发送包，最后源主机、两个交换机都在发送包。在发送接近结束时，源主机、第一个交换机、第二个交换机依次停止发送。</p>
-<p>因此，将文件从源主机发送到目标主机需要<script type="math/tex">t=\frac{800 \times 3-1-2-1-2}{3} \times 5 + 4 \times 5=</script> 4.01s &lt;16s </p>
+<p>因此，将文件从源主机发送到目标主机需要<script type="math/tex">t=\frac{800 \times 3-1-2-1-2}{3} \times 5 + 4 \times 5=</script> 4.01s &lt;12s </p>
 <p>与上述计算出来的答案进行比较，消息分段显著降低了消息发送的总时间。另外，消息分段发送的总时间接近于未分段发送一次的时间。由于分段发送初始时、结束时所占时间极少，信息在交换机间并行发送，可看作仅由源主机直接发送至目标主机。</p>
 <h3 id="1-6-问题d"><a href="#1-6-问题d" class="headerlink" title="1.6 问题d"></a>1.6 问题d</h3><p>除可以降低延迟外，使用消息分段还有什么优势?</p>
 <p><strong>答：</strong>1. 由于消息分段传输，因此在消息需要更新时，可以只发送更新的部分，提高效率。</p>
@@ -448,7 +448,104 @@ C --> D(Destination)</pre>
 <h4 id="9-1-2-设计应用CSS"><a href="#9-1-2-设计应用CSS" class="headerlink" title="9.1.2 设计应用CSS"></a>9.1.2 设计应用CSS</h4><p>CSS即层叠样式表，指定HTML中各种元素的展现方式。使用CSS将文档的<strong>结构</strong>和<strong>设计</strong>分离。</p>
 <h3 id="9-2-动态HTML"><a href="#9-2-动态HTML" class="headerlink" title="9.2 动态HTML"></a>9.2 动态HTML</h3><p>动态HTML即通过调用JavaScript实现对HTML的Web页面的动态改造，利用DOM指定欲发生动态变化的HTML元素。</p>
 <p>DOM即用以操作HTML文档和XML文档的API，使用DOM可以将HTML内的元素当对象操作。而JavaScript则是一种更简单的操作DOM的方式。</p>
-<h3 id="9-3-Web应用"><a href="#9-3-Web应用" class="headerlink" title="9.3 Web应用"></a>9.3 Web应用</h3>]]></content>
+<h3 id="9-3-Web应用"><a href="#9-3-Web应用" class="headerlink" title="9.3 Web应用"></a>9.3 Web应用</h3><p>Web应用指通过Web功能提供的应用程序。Web应用作用于动态内容之上。什么是动态内容呢？</p>
+<p>动态内容即由Web服务器上的程序创建的HTML内容。</p>
+<h4 id="9-3-1-CGI"><a href="#9-3-1-CGI" class="headerlink" title="9.3.1 CGI"></a>9.3.1 CGI</h4><p>CGI即Common Gateway Interface，是Web服务器在接收到客户端发送来的请求后转发给程序的一组机制。</p>
+<p>使用CGI的程序叫做CGI程序，有PHP等编程语言写成。</p>
+<h4 id="9-3-2-Servlet"><a href="#9-3-2-Servlet" class="headerlink" title="9.3.2 Servlet"></a>9.3.2 Servlet</h4><p>Servlet是用来代替CGI的在服务器上创建动态内容的程序。为什么要把CGI替换掉呢？因为CGI有缺点呗！</p>
+<p>CGI在每次接到请求时，程序都会跟着启动一次，当访问量过大时，服务器负载较大。</p>
+<p>而Servlet运行的环境Web容器或Servlet容器中，与Web服务器在相同的进程中。</p>
+<h3 id="9-4-数据发布的格式及语言"><a href="#9-4-数据发布的格式及语言" class="headerlink" title="9.4 数据发布的格式及语言"></a>9.4 数据发布的格式及语言</h3><h4 id="9-4-1-XML（eXtensible-Markup-Language）"><a href="#9-4-1-XML（eXtensible-Markup-Language）" class="headerlink" title="9.4.1 XML（eXtensible Markup Language）"></a>9.4.1 XML（eXtensible Markup Language）</h4><p>XML是可按应用目标进行扩展的通用标记语言，旨在通过使用XML使互联网数据共享变得容易。</p>
+<p>XML和HTML都是从SGML简化而成，从XML文档读取数据比从HTML更为简单。</p>
+<h4 id="9-4-2-发布更新信息的RSS-Atom"><a href="#9-4-2-发布更新信息的RSS-Atom" class="headerlink" title="9.4.2 发布更新信息的RSS/Atom"></a>9.4.2 发布更新信息的RSS/Atom</h4><p>RSS和Atom都是发布新闻、博客等更新信息文档的格式的总称，都用到了XML。</p>
+<h4 id="9-4-3-JSON"><a href="#9-4-3-JSON" class="headerlink" title="9.4.3 JSON"></a>9.4.3 JSON</h4><p>JSON是一种轻量级数据标记语言。</p>
+<h2 id="10-Web的攻击技术"><a href="#10-Web的攻击技术" class="headerlink" title="10. Web的攻击技术"></a>10. Web的攻击技术</h2><h3 id="10-1-针对Web的攻击技术"><a href="#10-1-针对Web的攻击技术" class="headerlink" title="10.1 针对Web的攻击技术"></a>10.1 针对Web的攻击技术</h3><p>在学习Web的攻击之前，首先需要明确的是，攻击对象是什么？简单的HTTP协议并不存在安全性问题，使用HTTP的才是攻击目标。包括<strong>服务器、客户端、运行在服务器上的Web应用等资源</strong>。</p>
+<p>由于HTTP协议在安全性方面呈劣势，开发者需要自行设计开发认证、会话管理功能来满足Web应用的安全需求，因此存在着多种多样的Bug。</p>
+<h4 id="10-1-2-针对Web应用的攻击模式"><a href="#10-1-2-针对Web应用的攻击模式" class="headerlink" title="10.1.2 针对Web应用的攻击模式"></a>10.1.2 针对Web应用的攻击模式</h4><p>对Web应用的攻击有主动攻击和被动攻击两种。</p>
+<ul>
+<li>以服务器为目标的主动攻击：通过直接访问传入攻击代码，获得服务器资源。如SQL注入。</li>
+<li>以服务器为目标的被动攻击：利用圈套策略执行攻击代码。如跨站脚本攻击。</li>
+<li>利用用户的身份攻击企业内部网络：设置陷阱诱导内网用户触发。</li>
+</ul>
+<h3 id="10-2-因输出值转义不完全引发的安全漏洞"><a href="#10-2-因输出值转义不完全引发的安全漏洞" class="headerlink" title="10.2 因输出值转义不完全引发的安全漏洞"></a>10.2 因输出值转义不完全引发的安全漏洞</h3><p>要想找到安全漏洞，就要Web应用的安全对策，Web应用的安全对策可分为以下两部分：</p>
+<ul>
+<li>客户端的验证</li>
+<li>Web应用端的验证（输入值验证、输出值转义）</li>
+</ul>
+<p>客户端的验证是采用JavaScript在客户端验证数据，但在客户端允许篡改数据或关闭JavaScript，不适合作为安全防范对策，但为啥还要保留呢？辨识输入错误，可以提高UI体验。</p>
+<p>Web应用端的输入值验证用来检查输入值是否符合逻辑。</p>
+<p>Web应用端的输出值转移是针对输出值做转义处理。</p>
+<h4 id="10-2-1-跨站脚本攻击"><a href="#10-2-1-跨站脚本攻击" class="headerlink" title="10.2.1 跨站脚本攻击"></a>10.2.1 跨站脚本攻击</h4><p>跨站脚本攻击指通过存在安全漏洞的Web网站浏览器内运行非法的<strong>HTML标签</strong>或<strong>JavaScript</strong>进行的攻击。</p>
+<p>可以实现以下功能：</p>
+<ul>
+<li>利用虚假表单骗取用户信息</li>
+<li>利用脚本窃取Cookie值，帮助攻击者发送恶意请求。</li>
+<li>显示伪造文章或图片。</li>
+</ul>
+<h4 id="10-2-2-SQL注入攻击"><a href="#10-2-2-SQL注入攻击" class="headerlink" title="10.2.2 SQL注入攻击"></a>10.2.2 SQL注入攻击</h4><p>在理解SQL注入之前，首先要知道何为SQL？</p>
+<blockquote>
+<p>SQL是用来操作关系型数据库管理系统的数据库语言，著名的数据库有Oracal、SQL Server</p>
+<p>MySQL等。</p>
+</blockquote>
+<p>SQL注入是指对Web应用使用的数据库，运行非法的SQL产生的攻击。可能会造成如下影响：</p>
+<ul>
+<li>非法查看、篡改数据库内的数据</li>
+<li>规避认证</li>
+<li>执行和数据库服务器业务关联的程序</li>
+</ul>
+<h4 id="10-2-3-OS命令注入攻击"><a href="#10-2-3-OS命令注入攻击" class="headerlink" title="10.2.3 OS命令注入攻击"></a>10.2.3 OS命令注入攻击</h4><p>OS命令注入攻击是指通过Web应用，执行非法的<strong>操作系统命令</strong>达到攻击的目的。那么是如何在Web应用中调用操作系统命令的呢？Web应用中通过Shell实现调用操作系统命令。</p>
+<h4 id="10-2-4-HTTP首部注入攻击"><a href="#10-2-4-HTTP首部注入攻击" class="headerlink" title="10.2.4 HTTP首部注入攻击"></a>10.2.4 HTTP首部注入攻击</h4><p>HTTP首部注入攻击指攻击者咋响应首部字段插入换行、添加任意响应首部、主体的一种攻击。</p>
+<p>可能会产生如下影响：</p>
+<ul>
+<li>设置任何Cookie信息</li>
+<li>重定向至任意URL</li>
+<li>显示任意主体</li>
+</ul>
+<h4 id="10-2-5-邮件首部注入攻击"><a href="#10-2-5-邮件首部注入攻击" class="headerlink" title="10.2.5 邮件首部注入攻击"></a>10.2.5 邮件首部注入攻击</h4><p>攻击者通过向邮件首部To或Subject内任意添加非法内容发起攻击。可以实现对任意邮件地址发送广告邮件或病毒邮件。</p>
+<h4 id="10-2-6-目录遍历攻击"><a href="#10-2-6-目录遍历攻击" class="headerlink" title="10.2.6 目录遍历攻击"></a>10.2.6 目录遍历攻击</h4><p>对本无意公开的文件目录，通过非法截断路径后，达成访问目的的一种攻击。</p>
+<h4 id="10-2-7-远程文件包含漏洞"><a href="#10-2-7-远程文件包含漏洞" class="headerlink" title="10.2.7 远程文件包含漏洞"></a>10.2.7 远程文件包含漏洞</h4><p>当部分脚本内容需要从其他文件读入时，攻击者利用指定外部服务器的URL充当依赖文件，脚本读取后，就可运行任意脚本的一种攻击。</p>
+<h3 id="10-3-因设置或设计上的缺陷引发的安全漏洞"><a href="#10-3-因设置或设计上的缺陷引发的安全漏洞" class="headerlink" title="10.3 因设置或设计上的缺陷引发的安全漏洞"></a>10.3 因设置或设计上的缺陷引发的安全漏洞</h3><h4 id="10-3-1-强制浏览"><a href="#10-3-1-强制浏览" class="headerlink" title="10.3.1 强制浏览"></a>10.3.1 强制浏览</h4><p>功能：从安置在Web服务器的公开目录下的文件中，浏览非自愿公开的文件。</p>
+<p>强制浏览可能造成以下影响：</p>
+<ul>
+<li>泄露顾客个人信息</li>
+<li>泄露需要访问权限可查阅的内容</li>
+<li>泄露未外连的文件</li>
+</ul>
+<h4 id="10-3-2-不正确的错误消息处理"><a href="#10-3-2-不正确的错误消息处理" class="headerlink" title="10.3.2 不正确的错误消息处理"></a>10.3.2 不正确的错误消息处理</h4><p>这个其实很好理解，Web应用的错误信息包含对攻击者有用的信息。</p>
+<p>包括如下几种：</p>
+<ul>
+<li>Web应用抛出的错误信息</li>
+<li>数据库等系统抛出的错误信息</li>
+</ul>
+<h4 id="10-3-3-开放重定向"><a href="#10-3-3-开放重定向" class="headerlink" title="10.3.3 开放重定向"></a>10.3.3 开放重定向</h4><p>指定的重定向URL到某个恶意的Web网站。</p>
+<h3 id="10-4-因会话管理疏忽引发的安全漏洞"><a href="#10-4-因会话管理疏忽引发的安全漏洞" class="headerlink" title="10.4 因会话管理疏忽引发的安全漏洞"></a>10.4 因会话管理疏忽引发的安全漏洞</h3><h4 id="10-4-1-会话劫持"><a href="#10-4-1-会话劫持" class="headerlink" title="10.4.1 会话劫持"></a>10.4.1 会话劫持</h4><p>攻击者利用用户的会话ID伪装成用户，达到攻击的目的。</p>
+<p>那么何为会话ID呢？</p>
+<p>会话ID是具备认证功能的Web应用的会话管理机制，服务器端将会话ID与认证状态一对一匹配。</p>
+<h4 id="10-4-2-会话固定攻击"><a href="#10-4-2-会话固定攻击" class="headerlink" title="10.4.2 会话固定攻击"></a>10.4.2 会话固定攻击</h4><p>强制用户使用攻击者指定的会话ID。</p>
+<p>攻击者先访问网站申请得到一个会话ID,之后诱导用户使用该会话ID完成认证。</p>
+<h4 id="10-4-3-跨站点请求伪造"><a href="#10-4-3-跨站点请求伪造" class="headerlink" title="10.4.3 跨站点请求伪造"></a>10.4.3 跨站点请求伪造</h4><p>攻击者通过设置陷阱，强制对已完成认证的用户进行非预期的个人信息或设定信息等某些状态更新，属于被动攻击。</p>
+<p>可能造成如下影响：</p>
+<ul>
+<li>更新设定信息</li>
+<li>购买商品</li>
+<li>在留言板发表言论</li>
+</ul>
+<h3 id="10-5-其他安全漏洞"><a href="#10-5-其他安全漏洞" class="headerlink" title="10.5 其他安全漏洞"></a>10.5 其他安全漏洞</h3><h4 id="10-5-1-密码破解"><a href="#10-5-1-密码破解" class="headerlink" title="10.5.1 密码破解"></a>10.5.1 密码破解</h4><p>密码破解有以下两种手段：</p>
+<ul>
+<li>通过网络的密码试错</li>
+<li>对已加密密码的破解（获得加密或散列处理的密码数据）</li>
+</ul>
+<h4 id="10-5-2-点击劫持"><a href="#10-5-2-点击劫持" class="headerlink" title="10.5.2 点击劫持"></a>10.5.2 点击劫持</h4><p>利用透明的按钮或链接，诱使用户在不知情的情况下点击链接。</p>
+<h4 id="10-5-3-DoS攻击"><a href="#10-5-3-DoS攻击" class="headerlink" title="10.5.3 DoS攻击"></a>10.5.3 DoS攻击</h4><p>DoS攻击让运行中的服务呈停止状态，攻击对象不仅限于Web网站，包括网络设备、服务器等。主要有如下两种DoS攻击方式：</p>
+<ul>
+<li>集中利用访问请求造成资源过载，资源用尽时，服务停止。</li>
+<li>攻击安全漏洞使服务停止。</li>
+</ul>
+<p>这里！多台计算机发起的DoS攻击叫做DDoS攻击，多台计算机通常利用感染病毒的计算机作为攻击者的攻击跳板。</p>
+<h4 id="10-5-4-后门程序"><a href="#10-5-4-后门程序" class="headerlink" title="10.5.4 后门程序"></a>10.5.4 后门程序</h4><p>后门程序是开发设置的隐藏入口，可以由攻击者通过某种方法设置，比较难被发现。</p>
+<h2 id="完结撒花"><a href="#完结撒花" class="headerlink" title="完结撒花"></a>完结撒花</h2><p>一本两百多页的书，其实也是断断续续读了尽一个月，对网络有了一个比较深入的认识，相信这些会在计算机网络的学习中，助我更上一层楼，加油！！！</p>
+<p>下本书见。</p>
+]]></content>
       <tags>
         <tag>home</tag>
       </tags>
