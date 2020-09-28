@@ -550,4 +550,11 @@ C --> D(Destination)</pre>
         <tag>home</tag>
       </tags>
   </entry>
+  <entry>
+    <title>跨站脚本攻击</title>
+    <url>/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/</url>
+    <content><![CDATA[<img src="/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/first.png" class title="This is an example image">
+<p>跨站脚本攻击乍一看是不是有点陌生？其实它就是我们经常听到的XSS，这一定是跨站脚本攻击的英文⑧，其实，跨站脚本攻击的英文是Cross Site Script，缩写应该为CSS，但是与层叠样式表的CSS有所雷同，因此就改为XSS！（X嘛！琦琦子说了的，无限可能！）</p>
+]]></content>
+  </entry>
 </search>
