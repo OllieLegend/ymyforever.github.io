@@ -190,6 +190,168 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ymy">
+      <meta itemprop="description" content="Live my life with passion!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ymy is watching u!!!!">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/" class="post-title-link" itemprop="url">XSS的防御</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-02 14:36:32 / 修改时间：14:47:01" itemprop="dateCreated datePublished" datetime="2020-10-02T14:36:32+08:00">2020-10-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://ymyforever.netlify.app/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/" class="cy_cmt_count" data-xid="2020/10/02/XSS的防御/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>由于XSS的攻击构造的复杂性，其防御技巧也是复杂的。但也是有一些万金油可以抵御大部分的XSS攻击。</p>
+<ul>
+<li>HttpOnly：抵御XSS后的Cookie劫持，禁止页面的JavaScript访问带有HttpOnly属性的Cookie。</li>
+<li>输入检查：即格式检查，用白名单指定输入格式，</li>
+<li>输出检查：使用编码或转义处理输出变量。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="ymy">
+      <meta itemprop="description" content="Live my life with passion!">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ymy is watching u!!!!">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">XSS构造技巧</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-02 14:21:12 / 修改时间：14:36:14" itemprop="dateCreated datePublished" datetime="2020-10-02T14:21:12+08:00">2020-10-02</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/#SOHUCS" itemprop="discussionUrl">
+        <span id="url::https://ymyforever.netlify.app/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/" class="cy_cmt_count" data-xid="2020/10/02/XSS构造技巧/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>XSS的攻击力是可见一斑的，但是在现实生活中，XSS的构造技巧是复杂的。是根据网站的各种特性、结构灵活构造的。常见的XSS构造方法有以下几种（假装自己是大佬，实则在搬运书上的内容哈哈哈！</p>
+<ul>
+<li>利用字符编码：根据网页的编码吃掉系统的转义符等，绕过安全检查。</li>
+<li>绕过长度限制：利用event、注释符绕过输入框的长度限制</li>
+<li>使用\<base>标签：\<base>标签用于指定页面上相对路径标签上的hosting地址，实现XSS攻击</li>
+<li>window.name妙用：摆脱同源策略的限制，实现跨域、跨页面数据传递</li>
+<li>Flash XSS：用户的Flash文件可以实施脚本攻击，Flash也会产生XSS漏洞。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/09/30/%E5%9D%9A%E5%AE%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -782,7 +944,7 @@ C --> D(Destination)</pre>
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
