@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HelloWorld!</title>
+    <url>/2020/08/29/HelloWorld/</url>
+    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
+<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>XSS构造技巧</title>
+    <url>/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>XSS的攻击力是可见一斑的，但是在现实生活中，XSS的构造技巧是复杂的。是根据网站的各种特性、结构灵活构造的。常见的XSS构造方法有以下几种（假装自己是大佬，实则在搬运书上的内容哈哈哈！</p>
+<ul>
+<li>利用字符编码：根据网页的编码吃掉系统的转义符等，绕过安全检查。</li>
+<li>绕过长度限制：利用event、注释符绕过输入框的长度限制</li>
+<li>使用\<base>标签：\<base>标签用于指定页面上相对路径标签上的hosting地址，实现XSS攻击</li>
+<li>window.name妙用：摆脱同源策略的限制，实现跨域、跨页面数据传递</li>
+<li>Flash XSS：用户的Flash文件可以实施脚本攻击，Flash也会产生XSS漏洞。</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>Computer Networks and the Internet</title>
     <url>/2020/09/16/Internet/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>开始读这本神奇的书了，嗯，英文版，嗯，八百多页。在这期间不打算开新的书了，这些足够我读一段时间了。</p>
@@ -36,13 +56,6 @@
 <h3 id="2-1-网络的边缘怎么连接网络？"><a href="#2-1-网络的边缘怎么连接网络？" class="headerlink" title="2.1 网络的边缘怎么连接网络？"></a>2.1 网络的边缘怎么连接网络？</h3>]]></content>
   </entry>
   <entry>
-    <title>HelloWorld!</title>
-    <url>/2020/08/29/HelloWorld/</url>
-    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
-<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
-]]></content>
-  </entry>
-  <entry>
     <title>XSS的防御</title>
     <url>/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/</url>
     <content><![CDATA[<p>由于XSS的攻击构造的复杂性，其防御技巧也是复杂的。但也是有一些万金油可以抵御大部分的XSS攻击。</p>
@@ -50,19 +63,6 @@
 <li>HttpOnly：抵御XSS后的Cookie劫持，禁止页面的JavaScript访问带有HttpOnly属性的Cookie。</li>
 <li>输入检查：即格式检查，用白名单指定输入格式，</li>
 <li>输出检查：使用编码或转义处理输出变量。</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
-    <title>XSS构造技巧</title>
-    <url>/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>XSS的攻击力是可见一斑的，但是在现实生活中，XSS的构造技巧是复杂的。是根据网站的各种特性、结构灵活构造的。常见的XSS构造方法有以下几种（假装自己是大佬，实则在搬运书上的内容哈哈哈！</p>
-<ul>
-<li>利用字符编码：根据网页的编码吃掉系统的转义符等，绕过安全检查。</li>
-<li>绕过长度限制：利用event、注释符绕过输入框的长度限制</li>
-<li>使用\<base>标签：\<base>标签用于指定页面上相对路径标签上的hosting地址，实现XSS攻击</li>
-<li>window.name妙用：摆脱同源策略的限制，实现跨域、跨页面数据传递</li>
-<li>Flash XSS：用户的Flash文件可以实施脚本攻击，Flash也会产生XSS漏洞。</li>
 </ul>
 ]]></content>
   </entry>
@@ -113,6 +113,15 @@ C --> D(Destination)</pre>
 <ol>
 <li>由于消息分段，每段要加上编号等信息，总的传输信息量增大了。</li>
 </ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>限时碎片</title>
+    <url>/2020/10/04/%E9%99%90%E6%97%B6%E7%A2%8E%E7%89%87/</url>
+    <content><![CDATA[<p>这是怎样的一种心情？这种孤独会持久吗？是我太敏感了吗？我觉得无所谓的事情，他们非常在意，所以群居要不断迁就，又是渴望孤独的一天，渴望自由的一天。</p>
+<p>人呢，是群居动物，不断抱团取暖，又不断陷入孤独。</p>
+<p>希望你心平气和，不变初心，在黯淡的岁月里，向着目标前进，加油！</p>
+<p>晚安呐！明天又是奋斗的一天。啾咪。</p>
 ]]></content>
   </entry>
   <entry>
