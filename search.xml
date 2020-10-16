@@ -1,26 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>HelloWorld!</title>
-    <url>/2020/08/29/HelloWorld/</url>
-    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
-<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>XSS构造技巧</title>
-    <url>/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/</url>
-    <content><![CDATA[<p>XSS的攻击力是可见一斑的，但是在现实生活中，XSS的构造技巧是复杂的。是根据网站的各种特性、结构灵活构造的。常见的XSS构造方法有以下几种（假装自己是大佬，实则在搬运书上的内容哈哈哈！</p>
-<ul>
-<li>利用字符编码：根据网页的编码吃掉系统的转义符等，绕过安全检查。</li>
-<li>绕过长度限制：利用event、注释符绕过输入框的长度限制</li>
-<li>使用\<base>标签：\<base>标签用于指定页面上相对路径标签上的hosting地址，实现XSS攻击</li>
-<li>window.name妙用：摆脱同源策略的限制，实现跨域、跨页面数据传递</li>
-<li>Flash XSS：用户的Flash文件可以实施脚本攻击，Flash也会产生XSS漏洞。</li>
-</ul>
-]]></content>
-  </entry>
-  <entry>
     <title>Computer Networks and the Internet</title>
     <url>/2020/09/16/Internet/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>开始读这本神奇的书了，嗯，英文版，嗯，八百多页。在这期间不打算开新的书了，这些足够我读一段时间了。</p>
@@ -56,6 +36,26 @@
 <h3 id="2-1-网络的边缘怎么连接网络？"><a href="#2-1-网络的边缘怎么连接网络？" class="headerlink" title="2.1 网络的边缘怎么连接网络？"></a>2.1 网络的边缘怎么连接网络？</h3>]]></content>
   </entry>
   <entry>
+    <title>HelloWorld!</title>
+    <url>/2020/08/29/HelloWorld/</url>
+    <content><![CDATA[<h2 id="A-new-world"><a href="#A-new-world" class="headerlink" title="A new world!"></a>A new world!</h2><p>哈喽！历经一个下午博客终于搭建好了，原来是那么容易的一件事情，大一的时候想的很复杂，迟迟没能动手，现在也终于有了自己的小博客啦~</p>
+<p>未来灌水的文章还是会首先发在CSDN上，这里会分享一些重大的经历~已经大三了！要更努力学习！不要被些奇奇怪怪的事情干扰，奥里给！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>XSS构造技巧</title>
+    <url>/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/</url>
+    <content><![CDATA[<p>XSS的攻击力是可见一斑的，但是在现实生活中，XSS的构造技巧是复杂的。是根据网站的各种特性、结构灵活构造的。常见的XSS构造方法有以下几种（假装自己是大佬，实则在搬运书上的内容哈哈哈！</p>
+<ul>
+<li>利用字符编码：根据网页的编码吃掉系统的转义符等，绕过安全检查。</li>
+<li>绕过长度限制：利用event、注释符绕过输入框的长度限制</li>
+<li>使用\<base>标签：\<base>标签用于指定页面上相对路径标签上的hosting地址，实现XSS攻击</li>
+<li>window.name妙用：摆脱同源策略的限制，实现跨域、跨页面数据传递</li>
+<li>Flash XSS：用户的Flash文件可以实施脚本攻击，Flash也会产生XSS漏洞。</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
     <title>XSS的防御</title>
     <url>/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/</url>
     <content><![CDATA[<p>由于XSS的攻击构造的复杂性，其防御技巧也是复杂的。但也是有一些万金油可以抵御大部分的XSS攻击。</p>
@@ -77,6 +77,55 @@
 <li>考研数学</li>
 </ul>
 <p>希望在大三上结束的时候，可以过完一轮！加油！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>自顶向下语法分析方法</title>
+    <url>/2020/10/07/%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>跨站脚本攻击</title>
+    <url>/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/</url>
+    <content><![CDATA[<img src="/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/first.png" class title="This is an example image">
+<p>跨站脚本攻击乍一看是不是有点陌生？其实它就是我们经常听到的XSS，这一定是跨站脚本攻击的英文⑧，其实，跨站脚本攻击的英文是Cross Site Script，缩写应该为CSS，但是与层叠样式表的CSS有所雷同，因此就改为XSS！（X嘛！琦琦子说了的，无限可能！）</p>
+<p>在学习XSS之前，需要明确的是，什么是跨站脚本攻击？</p>
+<a id="more"></a>
+<h3 id="1-1-何为跨站脚本攻击？"><a href="#1-1-何为跨站脚本攻击？" class="headerlink" title="1.1 何为跨站脚本攻击？"></a>1.1 何为跨站脚本攻击？</h3><p>XSS通常是指，黑客利用HTML注入篡改了网页，插入恶意脚本，在用户浏览网页时，控制用户浏览器的一种攻击。这样说起来还是有点抽象，其实说白了就是想尽办法篡改网页的代码，让它执行你所期待的脚本，这种脚本或是窃取用户的隐私信息（如Cookie），或是达到破坏的目的。</p>
+<p>根据XSS的效果，可以将其分为以下几类：</p>
+<ul>
+<li>反射型XSS（非持久型XSS）：把用户输入的数据简单地反射给浏览器</li>
+<li>存储型XSS（持久型XSS）：把恶意脚本保存到服务器</li>
+<li>DOM Based XSS：反射型XSS的一种特殊情况，通过修改DOM节点形成的XSS。</li>
+</ul>
+<p>这里的反射型和存储型还都能理解，主要是这个DOM啊，这里还是请教百度老师。</p>
+<blockquote>
+<p>DOM即Document Object Model，是万维网联盟W3C的标准，定义了访问HTML和XML文档的标准。</p>
+</blockquote>
+<p>DOM大概就是一个标准，那么DOM节点是啥子呢？</p>
+<blockquote>
+<p>在HTML DOM标准中，HTML所有内容都是节点。包括文档节点、元素节点、属性节点等。</p>
+</blockquote>
+<p>那么DOM Based XSS也就是通过修改HTML中的元素，达到攻击的目的，比如闭合标签、注释标签等。</p>
+<h2 id="2-XSS攻击"><a href="#2-XSS攻击" class="headerlink" title="2. XSS攻击"></a>2. XSS攻击</h2><p>实现XSS攻击的方式多种多样，大致可分为以下几类：</p>
+<ul>
+<li>XSS Payload</li>
+<li>XSS Worm</li>
+</ul>
+<p>我们将分别对其展开介绍。</p>
+<h3 id="2-1-XSS-Payload"><a href="#2-1-XSS-Payload" class="headerlink" title="2.1 XSS Payload"></a>2.1 XSS Payload</h3><p>XSS Payload即XSS攻击成功后，被植入浏览器的恶意脚本。而这些脚本实质上是JavaScript脚本（可见不做一个Scripts Kid还是得学会JavaScript啊！）</p>
+<p>在XSS攻击成功后，Payload脚本通过多种方式控制用户的浏览器，实施破坏或窃取信息。</p>
+<h4 id="2-1-1-构造GET与POST请求"><a href="#2-1-1-构造GET与POST请求" class="headerlink" title="2.1.1 构造GET与POST请求"></a>2.1.1 构造GET与POST请求</h4><p>GET与POST请求是HTTP协议中的通信方法，一个网站的应用，通过这两种请求就可以完成所有操作，但是悲伤的是，通过JavaScript就能让浏览器发送这种请求。</p>
+<p>形象的来说，这种方法就是让JavaScript脚本通过发起请求模拟浏览器去执行相关操作。</p>
+<h4 id="2-1-2-XSS-钓鱼"><a href="#2-1-2-XSS-钓鱼" class="headerlink" title="2.1.2 XSS+钓鱼"></a>2.1.2 XSS+钓鱼</h4><p>网络世界上的钓鱼我们都知道，就是伪造一个知名的站点，骗取用户的信息，属于一种被动的攻击方式。将XSS与钓鱼结合，利用钓鱼获得关键信息，比如密码等，利用获得的信息进行XSS攻击。</p>
+<h4 id="2-1-3-识别用户浏览器"><a href="#2-1-3-识别用户浏览器" class="headerlink" title="2.1.3 识别用户浏览器"></a>2.1.3 识别用户浏览器</h4><p>识别用户的浏览器为什么那么重要呢？孙子早就说过了，知己知彼，百战不殆。通过XSS可以读取浏览器的版本信息等，达到收集信息的目的。一般较为准确的获得浏览器版本信息的方式是通过判断浏览器是否存在某些版本浏览器的特性实现的。</p>
+<h4 id="2-1-4-识别用户安装的软件"><a href="#2-1-4-识别用户安装的软件" class="headerlink" title="2.1.4 识别用户安装的软件"></a>2.1.4 识别用户安装的软件</h4><p>这里其实乍一看还是很奇怪的，浏览器和软件有什么关系？？？其实某些特定的软件会在浏览器里安装特殊的控件，某些插件如flash也会暴露计算机中的硬件信息。</p>
+<p><em>获得这些软硬件信息又有啥用呢？</em></p>
+<p>安装的软件可能会在浏览器中造成漏洞，通过XSS获得应用安装的软件，可以实现植入木马等攻击方式。</p>
+<h4 id="2-1-5-CSS-History-Hack"><a href="#2-1-5-CSS-History-Hack" class="headerlink" title="2.1.5 CSS History Hack"></a>2.1.5 CSS History Hack</h4><p>这个原理其实非常简单，而且目前已经被修复了。</p>
+<p>在我们小的时候使用电脑，会发现点过链接或图标会和没点过的颜色不同，通过CSS可以获得用户是否浏览过某个页面。</p>
+<h4 id="2-1-6-获取用户的真实IP地址"><a href="#2-1-6-获取用户的真实IP地址" class="headerlink" title="2.1.6 获取用户的真实IP地址"></a>2.1.6 获取用户的真实IP地址</h4><p>这种方式其实还是借助第三方软件完成的。JavaScript本身不具有提供本地IP地址的能力，但是Java有啊~ 如果客户端安装了Java环境，就可以通过接口获得客户端的IP地址。</p>
+<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><p>总的来说XSS是一个寻找突破口，通过各种方式获得用户信息的攻击方法，重要的呢，还是对Web系统有足够的了解，还有一定的JavaScript基础。</p>
 ]]></content>
   </entry>
   <entry>
@@ -125,47 +174,258 @@ C --> D(Destination)</pre>
 ]]></content>
   </entry>
   <entry>
-    <title>跨站脚本攻击</title>
-    <url>/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/</url>
-    <content><![CDATA[<img src="/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/first.png" class title="This is an example image">
-<p>跨站脚本攻击乍一看是不是有点陌生？其实它就是我们经常听到的XSS，这一定是跨站脚本攻击的英文⑧，其实，跨站脚本攻击的英文是Cross Site Script，缩写应该为CSS，但是与层叠样式表的CSS有所雷同，因此就改为XSS！（X嘛！琦琦子说了的，无限可能！）</p>
-<p>在学习XSS之前，需要明确的是，什么是跨站脚本攻击？</p>
-<a id="more"></a>
-<h3 id="1-1-何为跨站脚本攻击？"><a href="#1-1-何为跨站脚本攻击？" class="headerlink" title="1.1 何为跨站脚本攻击？"></a>1.1 何为跨站脚本攻击？</h3><p>XSS通常是指，黑客利用HTML注入篡改了网页，插入恶意脚本，在用户浏览网页时，控制用户浏览器的一种攻击。这样说起来还是有点抽象，其实说白了就是想尽办法篡改网页的代码，让它执行你所期待的脚本，这种脚本或是窃取用户的隐私信息（如Cookie），或是达到破坏的目的。</p>
-<p>根据XSS的效果，可以将其分为以下几类：</p>
-<ul>
-<li>反射型XSS（非持久型XSS）：把用户输入的数据简单地反射给浏览器</li>
-<li>存储型XSS（持久型XSS）：把恶意脚本保存到服务器</li>
-<li>DOM Based XSS：反射型XSS的一种特殊情况，通过修改DOM节点形成的XSS。</li>
-</ul>
-<p>这里的反射型和存储型还都能理解，主要是这个DOM啊，这里还是请教百度老师。</p>
-<blockquote>
-<p>DOM即Document Object Model，是万维网联盟W3C的标准，定义了访问HTML和XML文档的标准。</p>
+    <title>CTF校赛</title>
+    <url>/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/</url>
+    <content><![CDATA[<blockquote>
+<p>电计1806</p>
+<p>袁梦瑶</p>
+<p>201886013</p>
 </blockquote>
-<p>DOM大概就是一个标准，那么DOM节点是啥子呢？</p>
+<p>小白第一次打比赛了，真的好上头ORZ。</p>
+<p>这次比赛做出了以下题目，根据题目的类型，写出题解。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th><a href="http://10.7.20.225:4000/challenges#签到题-43">签到题</a></th>
+<th>a simple check in</th>
+<th>200</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#派对邀请函-5">派对邀请函</a></td>
+<td>crypto</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#broken webpage 2-9">broken webpage 2</a></td>
+<td>web</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#糟糕的调音师-58">糟糕的调音师</a></td>
+<td>misc</td>
+<td>120</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#可靠的志愿时长查询网站（1）-19">可靠的志愿时长查询网站（1）</a></td>
+<td>web</td>
+<td>328</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#你的手机-60">你的手机</a></td>
+<td>apk</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#very_easy-64">very_easy</a></td>
+<td>crypto</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#流量告急-17">流量告急</a></td>
+<td>web</td>
+<td>200</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#偷来的代码-10">偷来的代码</a></td>
+<td>misc</td>
+<td>379</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#Guess The Flag-24">Guess The Flag</a></td>
+<td>misc</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#秋天的第一道逆向-35">秋天的第一道逆向</a></td>
+<td>reverse</td>
+<td>241</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#白神话：悟能-11">白神话：悟能</a></td>
+<td>misc</td>
+<td>304</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#babyrop-47">babyrop</a></td>
+<td>pwn</td>
+<td>482</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#What remains of white pagoda-13">What remains of white pagoda</a></td>
+<td>misc</td>
+<td>267</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#俸俸伲 购美病-15">俸俸伲 购美病</a></td>
+<td>misc</td>
+<td>359</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#可靠的志愿时长查询网站（2）-18">可靠的志愿时长查询网站（2）</a></td>
+<td>web</td>
+<td>500</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#零卡攻略网-31">零卡攻略网</a></td>
+<td>misc</td>
+<td>349</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#问卷题-68">问卷题</a></td>
+<td>问卷题</td>
+<td>50</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#very_easy2-66">very_easy2</a></td>
+<td>crypto</td>
+<td>338</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#归来的蟒蛇-36">归来的蟒蛇</a></td>
+<td>reverse</td>
+<td>470</td>
+</tr>
+<tr>
+<td><a href="http://10.7.20.225:4000/challenges#解救djinni-7">解救djinni</a></td>
+<td>crypto</td>
+<td>470</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="crypto"><a href="#crypto" class="headerlink" title="crypto"></a>crypto</h2><h3 id="1-派对邀请函"><a href="#1-派对邀请函" class="headerlink" title="1. 派对邀请函"></a>1. 派对邀请函</h3><p>题目描述如下：</p>
 <blockquote>
-<p>在HTML DOM标准中，HTML所有内容都是节点。包括文档节点、元素节点、属性节点等。</p>
+<p>欢迎各位参加派对，派对的邀请码是:ajkbky{hzsbprz_kp_rf_odmkf}<br>PS:邀请函的信封上面写着affine</p>
 </blockquote>
-<p>那么DOM Based XSS也就是通过修改HTML中的元素，达到攻击的目的，比如闭合标签、注释标签等。</p>
-<h2 id="2-XSS攻击"><a href="#2-XSS攻击" class="headerlink" title="2. XSS攻击"></a>2. XSS攻击</h2><p>实现XSS攻击的方式多种多样，大致可分为以下几类：</p>
+<p>这里很明确给出了加密方法是affine（仿射变换），根据flag的格式，ajkbky对应着dutctf。</p>
+<p>仿射变换的加密方式即$y=(ax+b)mod26$，$x$即将字母a~z按照0~25进行映射得到的。根据已知的信息c、d经加密后变为了1、0，可以列出如下式子：<script type="math/tex">(2a+b)mod26=1</script> <script type="math/tex">(3a+b)mod26=0</script></p>
+<p>根据这两个式子大胆猜测$3a+b-2a-b=25$，即$a=25$。则再大胆猜测$b=3$。在<a href="http://ctf.ssleye.com/affine.html">在线工具</a>中小心求证：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012161320110.png" alt="image-20201012161320110"></p>
+<p>运气爆棚！</p>
+<h3 id="2-very-easy"><a href="#2-very-easy" class="headerlink" title="2. very_easy"></a>2. very_easy</h3><p>题目给出了如下的01序列：</p>
+<blockquote>
+<p>11001000111010101110100011000110111010001100110011110110110101001110101011100110111010001011111011100100110010101101100011000010111100001111101</p>
+</blockquote>
+<p>简单看了一下，143列，不太美妙，再观察一下序列头部1100100对应着ASCII码中的d！这已经很说明问题了，说明这题是根据二进制序列得到ASCII码对应的字符，但是这个143列怎么划分呢？因此在序列最初位补0，将序列扩充为144列，正好可以分成32个8位二进制数。</p>
+<p>利用在线转换工具：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012164520341.png" alt="image-20201012164520341"></p>
+<h3 id="3-very-easy2"><a href="#3-very-easy2" class="headerlink" title="3. very_easy2"></a>3. very_easy2</h3><p>这么easy的嘛？题目描述：</p>
+<blockquote>
+<p>flag为：dutctf{xxxx}（xxxx为4位可见字符）</p>
+<p>flag的32位MD5为：2F63E0BE261A8BBC6D04F67A6420BE73</p>
+</blockquote>
+<p>首先，能提取到的信息是flag是dutctf{四个字符}，加密方式为MD5。心头一喜，这不又一个在线工具就能解决的嘛，冲冲冲。结果！在线工具全都不能用……，全都解码失败，嘤嘤嘤。换一种思路来看，flag中只有四位是不确定的，因此可以进行穷举，即将所有的可能flag均进行一次MD5编码，若与题目所给相同，则为正确的flag。</p>
+<p>说干就干，Python代码如下：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line">dict=[<span class="string">&#x27;1&#x27;</span>,<span class="string">&#x27;2&#x27;</span>,<span class="string">&#x27;3&#x27;</span>,<span class="string">&#x27;4&#x27;</span>,<span class="string">&#x27;5&#x27;</span>,<span class="string">&#x27;6&#x27;</span>,<span class="string">&#x27;7&#x27;</span>,<span class="string">&#x27;8&#x27;</span>,<span class="string">&#x27;9&#x27;</span>,<span class="string">&#x27;0&#x27;</span>,<span class="string">&#x27;a&#x27;</span>,<span class="string">&#x27;b&#x27;</span>,<span class="string">&#x27;c&#x27;</span>,<span class="string">&#x27;d&#x27;</span>,<span class="string">&#x27;e&#x27;</span>,<span class="string">&#x27;f&#x27;</span>,<span class="string">&#x27;g&#x27;</span>,<span class="string">&#x27;h&#x27;</span>,<span class="string">&#x27;i&#x27;</span>,<span class="string">&#x27;j&#x27;</span>,<span class="string">&#x27;k&#x27;</span>,<span class="string">&#x27;l&#x27;</span>,<span class="string">&#x27;m&#x27;</span>,<span class="string">&#x27;n&#x27;</span>,<span class="string">&#x27;o&#x27;</span>,<span class="string">&#x27;p&#x27;</span>,<span class="string">&#x27;q&#x27;</span>,<span class="string">&#x27;r&#x27;</span>,<span class="string">&#x27;s&#x27;</span>,<span class="string">&#x27;t&#x27;</span>,<span class="string">&#x27;u&#x27;</span>,<span class="string">&#x27;v&#x27;</span>,<span class="string">&#x27;w&#x27;</span>,<span class="string">&#x27;x&#x27;</span>,<span class="string">&#x27;y&#x27;</span>,<span class="string">&#x27;z&#x27;</span>,<span class="string">&#x27;A&#x27;</span>,<span class="string">&#x27;B&#x27;</span>,<span class="string">&#x27;C&#x27;</span>,<span class="string">&#x27;D&#x27;</span>,<span class="string">&#x27;E&#x27;</span>,<span class="string">&#x27;F&#x27;</span>,<span class="string">&#x27;G&#x27;</span>,<span class="string">&#x27;H&#x27;</span>,<span class="string">&#x27;I&#x27;</span>,<span class="string">&#x27;J&#x27;</span>,<span class="string">&#x27;K&#x27;</span>,<span class="string">&#x27;L&#x27;</span>,<span class="string">&#x27;M&#x27;</span>,<span class="string">&#x27;N&#x27;</span>,<span class="string">&#x27;O&#x27;</span>,<span class="string">&#x27;P&#x27;</span>,<span class="string">&#x27;Q&#x27;</span>,<span class="string">&#x27;R&#x27;</span>,<span class="string">&#x27;S&#x27;</span>,<span class="string">&#x27;T&#x27;</span>,<span class="string">&#x27;U&#x27;</span>,<span class="string">&#x27;V&#x27;</span>,<span class="string">&#x27;W&#x27;</span>,<span class="string">&#x27;X&#x27;</span>,<span class="string">&#x27;Y&#x27;</span>,<span class="string">&#x27;Z&#x27;</span>];</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">jm_md5</span>(<span class="params">password</span>):</span></span><br><span class="line">    m = hashlib.md5()  <span class="comment"># 构建MD5对象</span></span><br><span class="line">    m.update(password.encode(encoding=<span class="string">&#x27;utf-8&#x27;</span>)) <span class="comment">#设置编码格式 并将字符串添加到MD5对象中</span></span><br><span class="line">    password_md5 = m.hexdigest()  <span class="comment"># hexdigest()将加密字符串 生成十六进制数据字符串值</span></span><br><span class="line">    <span class="keyword">return</span> password, password_md5</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">62</span>):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">62</span>):</span><br><span class="line">        <span class="keyword">for</span> k <span class="keyword">in</span> range(<span class="number">62</span>):</span><br><span class="line">            <span class="keyword">for</span> m <span class="keyword">in</span> range(<span class="number">62</span>):</span><br><span class="line">                g=jm_md5(<span class="string">&#x27;dutctf&#123;&#x27;</span>+dict[i]+dict[j]+dict[k]+dict[m]+<span class="string">&#x27;&#125;&#x27;</span>);</span><br><span class="line">                <span class="keyword">if</span>(g[<span class="number">1</span>]==<span class="string">&#x27;2f63e0be261a8bbc6d04f67a6420be73&#x27;</span>):</span><br><span class="line">                    print(g);</span><br><span class="line">                    exit(<span class="number">0</span>);</span><br><span class="line">                    </span><br></pre></td></tr></table></figure>
+<p>运行结果如下图所示：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012165531028.png" alt="image-20201012165531028"></p>
+<h3 id="4-解救djinni"><a href="#4-解救djinni" class="headerlink" title="4. 解救djinni"></a>4. 解救djinni</h3><p>这一题啊，这一题是三因子RSA。主要信息如下：</p>
+<blockquote>
+<p>n=28116501373069407529213390531934071240414724809734554101278337447648500850443874609634759871069124858471130508433374448577838830472420657794929950007704638114247135033643982446865019513802727631106264690573292907167703752264974438544477447411763513030827927646266015229042229047040884286226890097583263897118280598364992512298956815392685402922761695703536745127506370152135062261686045823207730047163547093865636626595424846315894348566041716817943762598947184414510650358649685893036636541625188322614290875362015491795655295050491512522830808195017431009672814060376303672362050873644513053562819138851207809579117<br>c=19866489767594156836541562259623272128065662749348680891720498852620196212982394122215521298026657621891937349917437004361046980750115732963572660841065965187469747890695962127007998382594056214490464853349221<br>e=3</p>
+</blockquote>
+<p>首先网上没找到解题工具，就去了解一下原理，发现问题的关键好像要求解n的质因子，这就陷入了死循环，n的位数太大了！并没有一个求解质因子的有效方法。后来在<a href="RSA攻击手法及相应例题解析 - 合粉的文章 - 知乎 https://zhuanlan.zhihu.com/p/46487673">网上冲浪</a>的时候发现这道题的关键在于e=3！3太小了，这是一种典型的低加密指数攻击。可以用Python求解：</p>
+<p>代码如下:</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> gmpy2,binascii,libnum,time</span><br><span class="line">n=<span class="number">28116501373069407529213390531934071240414724809734554101278337447648500850443874609634759871069124858471130508433374448577838830472420657794929950007704638114247135033643982446865019513802727631106264690573292907167703752264974438544477447411763513030827927646266015229042229047040884286226890097583263897118280598364992512298956815392685402922761695703536745127506370152135062261686045823207730047163547093865636626595424846315894348566041716817943762598947184414510650358649685893036636541625188322614290875362015491795655295050491512522830808195017431009672814060376303672362050873644513053562819138851207809579117</span></span><br><span class="line">c=<span class="number">19866489767594156836541562259623272128065662749348680891720498852620196212982394122215521298026657621891937349917437004361046980750115732963572660841065965187469747890695962127007998382594056214490464853349221</span></span><br><span class="line">e=<span class="number">3</span></span><br><span class="line">i=<span class="number">0</span>;</span><br><span class="line">print(time.asctime())</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">200000000</span>):</span><br><span class="line">    <span class="keyword">if</span> gmpy2.iroot(c+n*i,e)[<span class="number">1</span>]==<span class="number">1</span>:</span><br><span class="line">        res=gmpy2.iroot(c+n*i,e)[<span class="number">0</span>]</span><br><span class="line">        <span class="keyword">print</span> (i,res)</span><br><span class="line">        <span class="keyword">print</span> (libnum.n2s(res))</span><br><span class="line">        <span class="keyword">print</span> (time.asctime())</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+<p>这里运行起来还是有点问题的，但是不影响解题。运行结果如下：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012170709725.png" alt="image-20201012170709725"></p>
+<p>这里已经得到了目标的十进制序列，但是这明显和flag的格式不同鸭！这时候考虑它是不是用了奇奇怪怪的编码，将10进制转为16进制，再转换为文本：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012171122310.png" alt="image-20201012171122310"></p>
+<h2 id="web"><a href="#web" class="headerlink" title="web"></a>web</h2><h3 id="1-broken-webpage-2"><a href="#1-broken-webpage-2" class="headerlink" title="1. broken webpage 2"></a>1. broken webpage 2</h3><p>这一题首先根据网页中的提示去点按钮获得flag，发现按钮在不断移动，因此企图修改源码使得button可点击，在搜寻了一圈后，发现script标签里的move函数呗编码加密了，为了搞懂button的修改方法，在<a href="https://tool.lu/js/">在线工具</a>里对该部分代码进行解码：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013104828416.png" alt="image-20201013104828416"></p>
+<h3 id="2-流量告急"><a href="#2-流量告急" class="headerlink" title="2.流量告急"></a>2.流量告急</h3><p>这道题刚开始绕了挺久。。。先是想着修改前端代码、甚至burpsuite抓包修改购买金额，但是最终无果呜呜呜，后来才发现原来是负溢出问题。</p>
+<p>只需要一直在购买框里买负金额的流量即可。直到超出负数的极限。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013110733859.png" alt="image-20201013110733859"></p>
+<h3 id="3-可靠的志愿时长查询网站（1）"><a href="#3-可靠的志愿时长查询网站（1）" class="headerlink" title="3. 可靠的志愿时长查询网站（1）"></a>3. 可靠的志愿时长查询网站（1）</h3><p>这道题其实首先没往SQL注入上想，刚开始觉得是弱密码爆破，结果爆了个寂寞，之后才尝试用SQL注入解题。直接搜索了SQL注入的语句，绕过登陆验证的方法主要是用or 1=1使得条件成立，并用#注释后面的语句。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013130500835.png" alt="image-20201013130500835"></p>
+<p>小小尝试一下，成功绕过登陆检验。拿到flag</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013130539255.png" alt="image-20201013130539255"></p>
+<h3 id="4-可靠的志愿时长查询网站-2"><a href="#4-可靠的志愿时长查询网站-2" class="headerlink" title="4. 可靠的志愿时长查询网站(2)"></a>4. 可靠的志愿时长查询网站(2)</h3><p>这一题就有意思了，第一次跟着网上的教程摸索出来的。成就感还是有的哈哈~</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013131348811.png" alt="image-20201013131348811"></p>
+<p>经过测试可以得知，用大写字符可以绕过敏感词检验，并且为数字型注入漏洞。</p>
+<p>因此可以在这个注入点进行一些探索。</p>
+<p>首先确定表中有多少个字段：</p>
+<p>由查询信息可得，至少有8个字段，从8向上递增，当测试到12时，显示返回信息错误，因此字段个数为11。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013131739285.png" alt="image-20201013131739285"></p>
+<p>确定字段个数之后，就可根据Union联合查询爆破数据库、表名。冲冲冲！</p>
+<p>使用如下语句爆破：</p>
 <ul>
-<li>XSS Payload</li>
-<li>XSS Worm</li>
+<li><p>获得数据库名: number=1 UNION SELECT database(),database(),database(),database(),database(),database(),database(),database(),database(),database(),database()#</p>
+<p>获得数据库名：vol_time_2</p>
+</li>
+<li><p>获得表名：number=1 UNION SELECT TABLE_NAME,TABLE_NAME,TABLE_NAME,TABLE_NAME,TABLE_NAME,TABLE_NAME,TABLE_SCHEMA,TABLE_SCHEMA,TABLE_SCHEMA,TABLE_SCHEMA,TABLE_SCHEMA FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA= ‘vol_time_2’#</p>
+<p>获得表flag和vt_bak。</p>
+</li>
 </ul>
-<p>我们将分别对其展开介绍。</p>
-<h3 id="2-1-XSS-Payload"><a href="#2-1-XSS-Payload" class="headerlink" title="2.1 XSS Payload"></a>2.1 XSS Payload</h3><p>XSS Payload即XSS攻击成功后，被植入浏览器的恶意脚本。而这些脚本实质上是JavaScript脚本（可见不做一个Scripts Kid还是得学会JavaScript啊！）</p>
-<p>在XSS攻击成功后，Payload脚本通过多种方式控制用户的浏览器，实施破坏或窃取信息。</p>
-<h4 id="2-1-1-构造GET与POST请求"><a href="#2-1-1-构造GET与POST请求" class="headerlink" title="2.1.1 构造GET与POST请求"></a>2.1.1 构造GET与POST请求</h4><p>GET与POST请求是HTTP协议中的通信方法，一个网站的应用，通过这两种请求就可以完成所有操作，但是悲伤的是，通过JavaScript就能让浏览器发送这种请求。</p>
-<p>形象的来说，这种方法就是让JavaScript脚本通过发起请求模拟浏览器去执行相关操作。</p>
-<h4 id="2-1-2-XSS-钓鱼"><a href="#2-1-2-XSS-钓鱼" class="headerlink" title="2.1.2 XSS+钓鱼"></a>2.1.2 XSS+钓鱼</h4><p>网络世界上的钓鱼我们都知道，就是伪造一个知名的站点，骗取用户的信息，属于一种被动的攻击方式。将XSS与钓鱼结合，利用钓鱼获得关键信息，比如密码等，利用获得的信息进行XSS攻击。</p>
-<h4 id="2-1-3-识别用户浏览器"><a href="#2-1-3-识别用户浏览器" class="headerlink" title="2.1.3 识别用户浏览器"></a>2.1.3 识别用户浏览器</h4><p>识别用户的浏览器为什么那么重要呢？孙子早就说过了，知己知彼，百战不殆。通过XSS可以读取浏览器的版本信息等，达到收集信息的目的。一般较为准确的获得浏览器版本信息的方式是通过判断浏览器是否存在某些版本浏览器的特性实现的。</p>
-<h4 id="2-1-4-识别用户安装的软件"><a href="#2-1-4-识别用户安装的软件" class="headerlink" title="2.1.4 识别用户安装的软件"></a>2.1.4 识别用户安装的软件</h4><p>这里其实乍一看还是很奇怪的，浏览器和软件有什么关系？？？其实某些特定的软件会在浏览器里安装特殊的控件，某些插件如flash也会暴露计算机中的硬件信息。</p>
-<p><em>获得这些软硬件信息又有啥用呢？</em></p>
-<p>安装的软件可能会在浏览器中造成漏洞，通过XSS获得应用安装的软件，可以实现植入木马等攻击方式。</p>
-<h4 id="2-1-5-CSS-History-Hack"><a href="#2-1-5-CSS-History-Hack" class="headerlink" title="2.1.5 CSS History Hack"></a>2.1.5 CSS History Hack</h4><p>这个原理其实非常简单，而且目前已经被修复了。</p>
-<p>在我们小的时候使用电脑，会发现点过链接或图标会和没点过的颜色不同，通过CSS可以获得用户是否浏览过某个页面。</p>
-<h4 id="2-1-6-获取用户的真实IP地址"><a href="#2-1-6-获取用户的真实IP地址" class="headerlink" title="2.1.6 获取用户的真实IP地址"></a>2.1.6 获取用户的真实IP地址</h4><p>这种方式其实还是借助第三方软件完成的。JavaScript本身不具有提供本地IP地址的能力，但是Java有啊~ 如果客户端安装了Java环境，就可以通过接口获得客户端的IP地址。</p>
-<h4 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h4><p>总的来说XSS是一个寻找突破口，通过各种方式获得用户信息的攻击方法，重要的呢，还是对Web系统有足够的了解，还有一定的JavaScript基础。</p>
+<p>获得了一张名为flag的表，事情没那么简单，flag肯定在这个表里，大胆猜测flag表里还有个flag字段。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013202541120.png" alt="image-20201013202541120"></p>
+<p>猜对啦！</p>
+<p>总结一下就是数据库里有个flag表，flag表里有个flag字段，flag字段里存储着flag!</p>
+<h2 id="PWN"><a href="#PWN" class="headerlink" title="PWN"></a>PWN</h2><h3 id="1-babyrop"><a href="#1-babyrop" class="headerlink" title="1. babyrop"></a>1. babyrop</h3><p>题目中已经说明了，是栈溢出。这里需要安装pwn包，但是由于我的python版本为3.xx，并且懒得用虚拟机，这里就根据<a href="https://www.anquanke.com/post/id/210394">教程</a>安装了winpwn。</p>
+<p>之后的关键就是payload的构造，这里采用了这个<a href="https://www.jianshu.com/p/d4db898762e6">基本模板</a>。栈溢出的原理是向栈中写入数据覆盖栈中其他的数据，从而影响程序的运行。原理参考了<a href="https://blog.csdn.net/sinat_31054897/article/details/82223889?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-3.channel_param">这篇文章</a>。</p>
+<p>将babyrop送入IDA反编译，可以查看其函数：</p>
+<p>阅读main函数可以发现栈溢出漏洞：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014092312541.png" alt="image-20201014092312541"></p>
+<p>发现后门函数：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014092553612.png" alt="image-20201014092553612"></p>
+<p>其地址为：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014093358805.png" alt="image-20201014093358805"></p>
+<p>因此可以利用栈溢出控制返回地址。</p>
+<p>根据栈可得，把栈填满需要偏移量为24。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014093133022.png" alt="image-20201014093133022"></p>
+<p>构造payload如下：payload=’A’*24 + p64(0x00000000004006B6)</p>
+<p>在命令行中运行文件，得到flag</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014093621652.png" alt="image-20201014093621652"></p>
+<h2 id="reverse"><a href="#reverse" class="headerlink" title="reverse"></a>reverse</h2><h3 id="1-秋天的第一道逆向"><a href="#1-秋天的第一道逆向" class="headerlink" title="1. 秋天的第一道逆向"></a>1. 秋天的第一道逆向</h3><p>直接txt打开查找关键词dutctf。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013202956375.png" alt="image-20201013202956375"></p>
+<h3 id="2-归来的蟒蛇"><a href="#2-归来的蟒蛇" class="headerlink" title="2. 归来的蟒蛇"></a>2. 归来的蟒蛇</h3><p>这道题首先下载下来的是pyc文件，这是python文件编译的一个过程文件，反编译之后可以得到原始的python代码，反编译之后的python代码如下（加上了代码分析过程中的一些注释）所示：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#! /usr/bin/env python 3.7 (3394)</span></span><br><span class="line"><span class="comment">#coding=utf-8</span></span><br><span class="line"><span class="comment"># Compiled at: 1969-12-31 18:00:00</span></span><br><span class="line"><span class="comment">#Powered by BugScaner</span></span><br><span class="line"><span class="comment">#http://tools.bugscaner.com/</span></span><br><span class="line"><span class="comment">#如果觉得不错,请分享给你朋友使用吧!</span></span><br><span class="line">aaa = [<span class="string">&#x27;A&#x27;</span>, <span class="string">&#x27;B&#x27;</span>, <span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;D&#x27;</span>, <span class="string">&#x27;E&#x27;</span>, <span class="string">&#x27;F&#x27;</span>, <span class="string">&#x27;G&#x27;</span>, <span class="string">&#x27;H&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;I&#x27;</span>, <span class="string">&#x27;J&#x27;</span>, <span class="string">&#x27;K&#x27;</span>, <span class="string">&#x27;L&#x27;</span>, <span class="string">&#x27;M&#x27;</span>, <span class="string">&#x27;N&#x27;</span>, <span class="string">&#x27;O&#x27;</span>, <span class="string">&#x27;P&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Q&#x27;</span>, <span class="string">&#x27;R&#x27;</span>, <span class="string">&#x27;S&#x27;</span>, <span class="string">&#x27;T&#x27;</span>, <span class="string">&#x27;U&#x27;</span>, <span class="string">&#x27;V&#x27;</span>, <span class="string">&#x27;W&#x27;</span>, <span class="string">&#x27;X&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;Y&#x27;</span>, <span class="string">&#x27;Z&#x27;</span>, <span class="string">&#x27;a&#x27;</span>, <span class="string">&#x27;b&#x27;</span>, <span class="string">&#x27;c&#x27;</span>, <span class="string">&#x27;d&#x27;</span>, <span class="string">&#x27;e&#x27;</span>, <span class="string">&#x27;f&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;g&#x27;</span>, <span class="string">&#x27;h&#x27;</span>, <span class="string">&#x27;i&#x27;</span>, <span class="string">&#x27;j&#x27;</span>, <span class="string">&#x27;k&#x27;</span>, <span class="string">&#x27;l&#x27;</span>, <span class="string">&#x27;m&#x27;</span>, <span class="string">&#x27;n&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;o&#x27;</span>, <span class="string">&#x27;p&#x27;</span>, <span class="string">&#x27;q&#x27;</span>, <span class="string">&#x27;r&#x27;</span>, <span class="string">&#x27;s&#x27;</span>, <span class="string">&#x27;t&#x27;</span>, <span class="string">&#x27;u&#x27;</span>, <span class="string">&#x27;v&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;w&#x27;</span>, <span class="string">&#x27;x&#x27;</span>, <span class="string">&#x27;y&#x27;</span>, <span class="string">&#x27;z&#x27;</span>, <span class="string">&#x27;9&#x27;</span>, <span class="string">&#x27;8&#x27;</span>, <span class="string">&#x27;7&#x27;</span>, <span class="string">&#x27;6&#x27;</span>,</span><br><span class="line"> <span class="string">&#x27;5&#x27;</span>, <span class="string">&#x27;4&#x27;</span>, <span class="string">&#x27;3&#x27;</span>, <span class="string">&#x27;2&#x27;</span>, <span class="string">&#x27;1&#x27;</span>, <span class="string">&#x27;0&#x27;</span>, <span class="string">&#x27;+&#x27;</span>, <span class="string">&#x27;/&#x27;</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">##长度为27...30 </span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bbb</span>(<span class="params">string</span>):</span></span><br><span class="line">    string = string.encode()</span><br><span class="line">    ret = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    bytes_bin = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> b <span class="keyword">in</span> string:</span><br><span class="line">        bytes_bin = bytes_bin + <span class="string">&#x27;&#123;:0&gt;8&#125;&#x27;</span>.format(str(bin(b))[<span class="number">2</span>:])</span><br><span class="line">        <span class="comment">#print(bytes_bin);</span></span><br><span class="line"></span><br><span class="line">    three_byte_zise = len(bytes_bin) // <span class="number">24</span> <span class="comment">##24的倍数</span></span><br><span class="line">    remain_size = len(bytes_bin) % <span class="number">24</span>  <span class="comment">##24的余数</span></span><br><span class="line">    three_byte_group = bytes_bin[:<span class="number">24</span> * three_byte_zise] <span class="comment">##[0:0..24..48]</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> three_byte_group:  </span><br><span class="line">        byte_group = three_byte_group[<span class="number">0</span>:<span class="number">24</span>]</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> (<span class="number">0</span>, <span class="number">6</span>, <span class="number">12</span>, <span class="number">18</span>):</span><br><span class="line">            ret = ret + aaa[int(byte_group[j:j + <span class="number">6</span>], <span class="number">2</span>)]<span class="comment">##结果映射a,循环一次，结果+4,将二进制转换为10进制</span></span><br><span class="line"></span><br><span class="line">        three_byte_group = three_byte_group[<span class="number">24</span>:]<span class="comment">##向后取24</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> remain_size:<span class="comment">##</span></span><br><span class="line">        remain_part = bytes_bin[<span class="number">24</span> * three_byte_zise:] + <span class="string">&#x27;0&#x27;</span> * (<span class="number">24</span> - remain_size)<span class="comment">##剩余部分填成24位</span></span><br><span class="line">        print(remain_part)</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> (<span class="number">0</span>, <span class="number">6</span>, <span class="number">12</span>, <span class="number">18</span>):</span><br><span class="line">            ret = ret + aaa[int(remain_part[j:j + <span class="number">6</span>], <span class="number">2</span>)]<span class="comment">##结果+4</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ret[<span class="number">-2</span>] == <span class="string">&#x27;A&#x27;</span>:</span><br><span class="line">        ret = ret[<span class="number">0</span>:<span class="number">-2</span>] + <span class="string">&#x27;==&#x27;</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> ret[<span class="number">-1</span>] == <span class="string">&#x27;A&#x27;</span>:</span><br><span class="line">            ret = ret[:<span class="number">-1</span>] + <span class="string">&#x27;=&#x27;</span></span><br><span class="line">    <span class="keyword">return</span> ret</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    print(<span class="string">&#x27;input:&#x27;</span>)</span><br><span class="line">    m = input()</span><br><span class="line">    <span class="keyword">if</span> bbb(m) == <span class="string">&#x27;ZHV9Y6Rme6B4dGhvbl0pc80jb78taW4nX7JhY7t0&#x27;</span>:</span><br><span class="line">        print(<span class="string">&#x27;bingo&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>分析上述代码，可以得到该程序把输入经bbb函数加密，正确的bbb即flag加密后应与’ZHV9Y6Rme6B4dGhvbl0pc80jb78taW4nX7JhY7t0’相同。因此需要详细解读上述加密代码。</p>
+<p>bbb函数首先输入的字符串中的每个字符转化为8位的二进制数，每三个字节在密文中增加4个字符，若剩余的字节数不足三个或总字节数小于3，则在密文中增加4个字符。</p>
+<p>题目中所给字符有40位，因此可能的情况有多种，<strong>首先考虑最简单的情况</strong>，即字节数正好为3的整数倍，即30个字节。</p>
+<p>之后考虑密文增加的方法，根据ret = ret + aaa[int(byte_group[j:j + 6], 2)]，可以看到原始字节中的6位二进制数转化为一个十进制数，并取aaa[该十进制数]。</p>
+<p>那么我们可以根据密文中的字符，逐个对照aaa找到其对应的十进制数，并还原为6位二进制数，所有的6位二进制连接在一起，即为原始的二进制序列。</p>
+<p>使用如下python代码实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">x=<span class="string">&#x27;ZHV9Y6Rme6B4dGhvbl0pc80jb78taW4nX7JhY7t0&#x27;</span>;</span><br><span class="line">    flag = <span class="string">&#x27;&#x27;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">40</span>):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">64</span>):</span><br><span class="line">            <span class="keyword">if</span> x[i] == aaa[j]:</span><br><span class="line">                flag = flag + <span class="string">&#x27;&#123;:0&gt;6&#125;&#x27;</span>.format(str(bin(j))[<span class="number">2</span>:]);</span><br><span class="line">    print(flag);</span><br></pre></td></tr></table></figure>
+<p>运行之后得到二进制序列:</p>
+<blockquote>
+<p>011001000111010101110100011000110111010001100110011110110111000001111001011101000110100001101111011011100101111101101001011100110101111101100011011011110110110101101101011010010110111001100111010111110110001001100001011000110110101101111101</p>
+</blockquote>
+<p>在在线工具中将二进制转换到字符串如下图所示：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012175950587.png" alt="image-20201012175950587"></p>
+<h2 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h2><h3 id="1-Guess-The-Flag"><a href="#1-Guess-The-Flag" class="headerlink" title="1. Guess The Flag"></a>1. Guess The Flag</h3><p>这一题啊，这一题是正则表达式，但我的代码丢了怎么办。。。我口述一下别打我。。。</p>
+<p>这一题是用python的正则表达式对文件中的flag进行筛选，正确的flag需满足以下条件：</p>
+<blockquote>
+<p>提示一：正确flag的第3位是大写字母<br>提示二：正确flag的第7位不是a到h之间的小写字母<br>提示三：正确flag的第13位是数字<br>提示四：正确flag的第24位是小写字母</p>
+</blockquote>
+<p>因此可根据这些提示构建正则表达式。（这里我不会写提示二，因此只筛选了提示1、3、4的内容，最后手动筛选满足提示2 的flag，即为正确的flag。</p>
+<h3 id="2-糟糕的调音师"><a href="#2-糟糕的调音师" class="headerlink" title="2. 糟糕的调音师"></a>2. 糟糕的调音师</h3><p>这一题的关键在”在频谱上乱画一通”，又查了一下音频的隐写，可以在频谱图上写下flag，因此下载了工具Audacity。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201013204257896.png" alt="image-20201013204257896"></p>
+<h3 id="3-What-remains-of-white-pagoda"><a href="#3-What-remains-of-white-pagoda" class="headerlink" title="3.What remains of white pagoda"></a>3.What remains of white pagoda</h3><p>这一题和练习题一样，缺少定位框的二维码，直接从网上找二维码把框截下来就行。</p>
+<h3 id="4-白神话：悟能"><a href="#4-白神话：悟能" class="headerlink" title="4. 白神话：悟能"></a>4. 白神话：悟能</h3><p>emmm，这题其实在考察python编程？看视频首先能看到一个很突兀的黑白图片：</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012180811172.png" alt="image-20201012180811172"></p>
+<p>这里出现了我们的老朋友DUTCTF，啊这！这一题的flag一定藏在视频里！但是视频的时长太长了！竟然有一个小时。所以想到用Python把这些帧提取出来：</p>
+<p>从网上扒了一个提取帧的代码：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> cv2    <span class="comment">##加载OpenCV模块</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">video2frames</span>(<span class="params">pathIn=<span class="string">&#x27;&#x27;</span>, </span></span></span><br><span class="line"><span class="function"><span class="params">                 pathOut=<span class="string">&#x27;&#x27;</span>, </span></span></span><br><span class="line"><span class="function"><span class="params">                 only_output_video_info = False, </span></span></span><br><span class="line"><span class="function"><span class="params">                 extract_time_points = None, </span></span></span><br><span class="line"><span class="function"><span class="params">                 initial_extract_time = <span class="number">0</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                 end_extract_time = None,</span></span></span><br><span class="line"><span class="function"><span class="params">                 extract_time_interval = <span class="number">-1</span>, </span></span></span><br><span class="line"><span class="function"><span class="params">                 output_prefix = <span class="string">&#x27;frame&#x27;</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                 jpg_quality = <span class="number">100</span>,</span></span></span><br><span class="line"><span class="function"><span class="params">                 isColor = True</span>):</span></span><br><span class="line">    <span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">    pathIn：视频的路径，比如：F:\python_tutorials\test.mp4</span></span><br><span class="line"><span class="string">    pathOut：设定提取的图片保存在哪个文件夹下，比如：F:\python_tutorials\frames1\。如果该文件夹不存在，函数将自动创建它</span></span><br><span class="line"><span class="string">    only_output_video_info：如果为True，只输出视频信息（长度、帧数和帧率），不提取图片</span></span><br><span class="line"><span class="string">    extract_time_points：提取的时间点，单位为秒，为元组数据，比如，(2, 3, 5)表示只提取视频第2秒， 第3秒，第5秒图片</span></span><br><span class="line"><span class="string">    initial_extract_time：提取的起始时刻，单位为秒，默认为0（即从视频最开始提取）</span></span><br><span class="line"><span class="string">    end_extract_time：提取的终止时刻，单位为秒，默认为None（即视频终点）</span></span><br><span class="line"><span class="string">    extract_time_interval：提取的时间间隔，单位为秒，默认为-1（即输出时间范围内的所有帧）</span></span><br><span class="line"><span class="string">    output_prefix：图片的前缀名，默认为frame，图片的名称将为frame_000001.jpg、frame_000002.jpg、frame_000003.jpg......</span></span><br><span class="line"><span class="string">    jpg_quality：设置图片质量，范围为0到100，默认为100（质量最佳）</span></span><br><span class="line"><span class="string">    isColor：如果为False，输出的将是黑白图片</span></span><br><span class="line"><span class="string">    &#x27;&#x27;&#x27;</span></span><br><span class="line">    </span><br><span class="line">    cap = cv2.VideoCapture(pathIn)  <span class="comment">##打开视频文件</span></span><br><span class="line">    n_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))  <span class="comment">##视频的帧数</span></span><br><span class="line">    fps = cap.get(cv2.CAP_PROP_FPS)  <span class="comment">##视频的帧率</span></span><br><span class="line">    dur = n_frames/fps  <span class="comment">##视频的时间</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">##如果only_output_video_info=True, 只输出视频信息，不提取图片</span></span><br><span class="line">    <span class="keyword">if</span> only_output_video_info:</span><br><span class="line">        print(<span class="string">&#x27;only output the video information (without extract frames)::::::&#x27;</span>)</span><br><span class="line">        print(<span class="string">&quot;Duration of the video: &#123;&#125; seconds&quot;</span>.format(dur))</span><br><span class="line">        print(<span class="string">&quot;Number of frames: &#123;&#125;&quot;</span>.format(n_frames))</span><br><span class="line">        print(<span class="string">&quot;Frames per second (FPS): &#123;&#125;&quot;</span>.format(fps)) </span><br><span class="line">    </span><br><span class="line">    <span class="comment">##提取特定时间点图片</span></span><br><span class="line">    <span class="keyword">elif</span> extract_time_points <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">        <span class="keyword">if</span> max(extract_time_points) &gt; dur:   <span class="comment">##判断时间点是否符合要求</span></span><br><span class="line">            <span class="keyword">raise</span> NameError(<span class="string">&#x27;the max time point is larger than the video duration....&#x27;</span>)</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            os.mkdir(pathOut)</span><br><span class="line">        <span class="keyword">except</span> OSError:</span><br><span class="line">            <span class="keyword">pass</span></span><br><span class="line">        success = <span class="literal">True</span></span><br><span class="line">        count = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> success <span class="keyword">and</span> count &lt; len(extract_time_points):</span><br><span class="line">            cap.set(cv2.CAP_PROP_POS_MSEC, (<span class="number">1000</span>*extract_time_points[count])) </span><br><span class="line">            success,image = cap.read()</span><br><span class="line">            <span class="keyword">if</span> success:</span><br><span class="line">                <span class="keyword">if</span> <span class="keyword">not</span> isColor:</span><br><span class="line">                    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)  <span class="comment">##转化为黑白图片</span></span><br><span class="line">                print(<span class="string">&#x27;Write a new frame: &#123;&#125;, &#123;&#125;th&#x27;</span>.format(success, count+<span class="number">1</span>))</span><br><span class="line">                cv2.imwrite(os.path.join(pathOut, <span class="string">&quot;&#123;&#125;_&#123;:06d&#125;.jpg&quot;</span>.format(output_prefix, count+<span class="number">1</span>)), image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])     <span class="comment"># save frame as JPEG file</span></span><br><span class="line">                count = count + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="comment">##判断起始时间、终止时间参数是否符合要求</span></span><br><span class="line">        <span class="keyword">if</span> initial_extract_time &gt; dur:</span><br><span class="line">            <span class="keyword">raise</span> NameError(<span class="string">&#x27;initial extract time is larger than the video duration....&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> end_extract_time <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">if</span> end_extract_time &gt; dur:</span><br><span class="line">                <span class="keyword">raise</span> NameError(<span class="string">&#x27;end extract time is larger than the video duration....&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> initial_extract_time &gt; end_extract_time:</span><br><span class="line">                <span class="keyword">raise</span> NameError(<span class="string">&#x27;end extract time is less than the initial extract time....&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment">##时间范围内的每帧图片都输出</span></span><br><span class="line">        <span class="keyword">if</span> extract_time_interval == <span class="number">-1</span>:</span><br><span class="line">            <span class="keyword">if</span> initial_extract_time &gt; <span class="number">0</span>:</span><br><span class="line">                cap.set(cv2.CAP_PROP_POS_MSEC, (<span class="number">1000</span>*initial_extract_time)) </span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                os.mkdir(pathOut)</span><br><span class="line">            <span class="keyword">except</span> OSError:</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            print(<span class="string">&#x27;Converting a video into frames......&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> end_extract_time <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                N = (end_extract_time - initial_extract_time)*fps + <span class="number">1</span></span><br><span class="line">                success = <span class="literal">True</span></span><br><span class="line">                count = <span class="number">0</span></span><br><span class="line">                <span class="keyword">while</span> success <span class="keyword">and</span> count &lt; N:</span><br><span class="line">                    success,image = cap.read()</span><br><span class="line">                    <span class="keyword">if</span> success:</span><br><span class="line">                        <span class="keyword">if</span> <span class="keyword">not</span> isColor:</span><br><span class="line">                            image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)</span><br><span class="line">                        print(<span class="string">&#x27;Write a new frame: &#123;&#125;, &#123;&#125;/&#123;&#125;&#x27;</span>.format(success, count+<span class="number">1</span>, n_frames))</span><br><span class="line">                        cv2.imwrite(os.path.join(pathOut, <span class="string">&quot;&#123;&#125;_&#123;:06d&#125;.jpg&quot;</span>.format(output_prefix, count+<span class="number">1</span>)), image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])     <span class="comment"># save frame as JPEG file</span></span><br><span class="line">                        count =  count + <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                success = <span class="literal">True</span></span><br><span class="line">                count = <span class="number">0</span></span><br><span class="line">                <span class="keyword">while</span> success:</span><br><span class="line">                    success,image = cap.read()</span><br><span class="line">                    <span class="keyword">if</span> success:</span><br><span class="line">                        <span class="keyword">if</span> <span class="keyword">not</span> isColor:</span><br><span class="line">                            image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)</span><br><span class="line">                        </span><br><span class="line">                        <span class="keyword">if</span> (image[<span class="number">0</span>:<span class="number">120</span>].any()==<span class="number">0</span>)<span class="keyword">and</span>(image.any()==<span class="number">1</span>):</span><br><span class="line">                            print(<span class="string">&#x27;Write a new frame: &#123;&#125;, &#123;&#125;/&#123;&#125;&#x27;</span>.format(success, count+<span class="number">1</span>, n_frames))</span><br><span class="line">                            cv2.imwrite(os.path.join(pathOut, <span class="string">&quot;&#123;&#125;_&#123;:06d&#125;.jpg&quot;</span>.format(output_prefix, count+<span class="number">1</span>)), image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])     <span class="comment"># save frame as JPEG file</span></span><br><span class="line">                        count =  count + <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">##判断提取时间间隔设置是否符合要求    </span></span><br><span class="line">        <span class="keyword">elif</span> extract_time_interval &gt; <span class="number">0</span> <span class="keyword">and</span> extract_time_interval &lt; <span class="number">1</span>/fps:</span><br><span class="line">            <span class="keyword">raise</span> NameError(<span class="string">&#x27;extract_time_interval is less than the frame time interval....&#x27;</span>)</span><br><span class="line">        <span class="keyword">elif</span> extract_time_interval &gt; (n_frames/fps):</span><br><span class="line">            <span class="keyword">raise</span> NameError(<span class="string">&#x27;extract_time_interval is larger than the duration of the video....&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment">##时间范围内每隔一段时间输出一张图片</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                os.mkdir(pathOut)</span><br><span class="line">            <span class="keyword">except</span> OSError:</span><br><span class="line">                <span class="keyword">pass</span></span><br><span class="line">            print(<span class="string">&#x27;Converting a video into frames......&#x27;</span>)</span><br><span class="line">            <span class="keyword">if</span> end_extract_time <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">                N = (end_extract_time - initial_extract_time)/extract_time_interval + <span class="number">1</span></span><br><span class="line">                success = <span class="literal">True</span></span><br><span class="line">                count = <span class="number">0</span></span><br><span class="line">                <span class="keyword">while</span> success <span class="keyword">and</span> count &lt; N:</span><br><span class="line">                    cap.set(cv2.CAP_PROP_POS_MSEC, (<span class="number">1000</span>*initial_extract_time+count*<span class="number">1000</span>*extract_time_interval)) </span><br><span class="line">                    success,image = cap.read()</span><br><span class="line">                    <span class="keyword">if</span> success:</span><br><span class="line">                        <span class="keyword">if</span> <span class="keyword">not</span> isColor:</span><br><span class="line">                            image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)</span><br><span class="line">                        print(<span class="string">&#x27;Write a new frame: &#123;&#125;, &#123;&#125;th&#x27;</span>.format(success, count+<span class="number">1</span>))</span><br><span class="line">                        cv2.imwrite(os.path.join(pathOut, <span class="string">&quot;&#123;&#125;_&#123;:06d&#125;.jpg&quot;</span>.format(output_prefix, count+<span class="number">1</span>)), image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])     <span class="comment"># save frame as JPEG file</span></span><br><span class="line">                        count = count + <span class="number">1</span></span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                success = <span class="literal">True</span></span><br><span class="line">                count = <span class="number">0</span></span><br><span class="line">                <span class="keyword">while</span> success:</span><br><span class="line">                    cap.set(cv2.CAP_PROP_POS_MSEC, (<span class="number">1000</span>*initial_extract_time+count*<span class="number">1000</span>*extract_time_interval)) </span><br><span class="line">                    success,image = cap.read()</span><br><span class="line">                    <span class="keyword">if</span> success:</span><br><span class="line">                        <span class="keyword">if</span> <span class="keyword">not</span> isColor:</span><br><span class="line">                            image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)</span><br><span class="line">                        print(<span class="string">&#x27;Write a new frame: &#123;&#125;, &#123;&#125;th&#x27;</span>.format(success, count+<span class="number">1</span>))</span><br><span class="line">                        cv2.imwrite(os.path.join(pathOut, <span class="string">&quot;&#123;&#125;_&#123;:06d&#125;.jpg&quot;</span>.format(output_prefix, count+<span class="number">1</span>)), image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])     <span class="comment"># save frame as JPEG file</span></span><br><span class="line">                        count = count + <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">##### 测试</span></span><br><span class="line">pathIn = <span class="string">&#x27;C:/Users/zxkj/Desktop/temp/《白神话：悟能》PV1/《白神话：悟能》PV1.mp4&#x27;</span></span><br><span class="line"></span><br><span class="line">pathOut = <span class="string">&#x27;C:/Users/zxkj/Desktop/temp/frame/&#x27;</span></span><br><span class="line">video2frames(pathIn, pathOut)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>在这个代码里，只需要在保存帧的部分做一个判断，判断这个图片是不是带有flag的图片格式（即上半部分为黑色）。修改关键代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if (image[0:120].any()&#x3D;&#x3D;0)and(image.any()&#x3D;&#x3D;1):##关键在这里</span><br><span class="line">    print(&#39;Write a new frame: &#123;&#125;, &#123;&#125;&#x2F;&#123;&#125;&#39;.format(success, count+1, n_frames))</span><br><span class="line">    cv2.imwrite(os.path.join(pathOut, &quot;&#123;&#125;_&#123;:06d&#125;.jpg&quot;.format(output_prefix, count+1)), image, [int(cv2.IMWRITE_JPEG_QUALITY), jpg_quality])     # save frame as JPEG file</span><br><span class="line">    count &#x3D;  count + 1</span><br></pre></td></tr></table></figure>
+<p>这里判断当图像颜色矩阵中0到120行每个数均为0（黑色RGB值为000）时，并且图像并非全黑时，将图片保存下来。根据保存的图片和题目中的提示，可以得到完整的flag。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201012181543581.png" alt="image-20201012181543581"></p>
+<h3 id="5-零卡攻略网"><a href="#5-零卡攻略网" class="headerlink" title="5. 零卡攻略网"></a>5. 零卡攻略网</h3><p>查阅资料可知，该题属于zip已知明文攻击，直接通过工具Archpr把签到题或第一课作为明文，零卡攻略网作为密文，进行解密即可。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014074238940.png" alt="image-20201014074238940"></p>
+<h3 id="6-俸俸伲-购美病"><a href="#6-俸俸伲-购美病" class="headerlink" title="6. 俸俸伲 购美病"></a>6. 俸俸伲 购美病</h3><p>题目里说在浏览器输入俸俸，浏览器中显示了淇镐扛，因此这里可以推断是URL编码的问题。这个时候就打开了我万能的<a href="http://ctf.ssleye.com/url.html">在线工具</a></p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014075333571.png" alt="image-20201014075333571"></p>
+<p>URL应该有这几种编码，如果能复现俸俸到淇镐扛的编码过程，那么也就能解密榛昏攢榛肩邯了。说干就干，这里用utf8对俸俸进行编码，再用gb2312进行解码！就出现了淇镐扛！</p>
+<p>那么对榛昏攢榛肩邯进行gb2312编码，再用utf8解码，就能得到最后的flag了。（这个网站在编码过程中有问题，于是换了<a href="http://tool.haooyou.com/code?group=convert&amp;type=strToHex&amp;charset=GB2312">一个网站</a></p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014080056973.png" alt="image-20201014080056973"></p>
+<h3 id="7-偷来的密码"><a href="#7-偷来的密码" class="headerlink" title="7. 偷来的密码"></a>7. 偷来的密码</h3><p>这个文件首先发现很奇怪</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014081543235.png" alt="image-20201014081543235"></p>
+<p>有很多长度不同的空白行，上网学习了一波，发现是whitespace编程语言……真的绝了，用<a href="https://vii5ard.github.io/whitespace/">在线编译器</a>跑一波，得到输出flag。</p>
+<p><img src="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog\blog\source\_posts\CTF校赛\image-20201014081801445.png" alt="image-20201014081801445"></p>
+<p><em>签到题、问卷题此处忽略。。。</em></p>
+<h2 id="apk"><a href="#apk" class="headerlink" title="apk"></a>apk</h2><h3 id="1-你的手机"><a href="#1-你的手机" class="headerlink" title="1. 你的手机"></a>1. 你的手机</h3><p>有了flag为四位的提示后，一切变得简单……只需要安装apk文件，再随便输点啥，屏幕下部就会不断弹出四位字符，对，那就是flag。。。</p>
 ]]></content>
   </entry>
   <entry>
@@ -453,7 +713,7 @@ C --> D(Destination)</pre>
 <p>大佬们又想到了一个绝妙的主意。</p>
 <h4 id="证书"><a href="#证书" class="headerlink" title="证书"></a>证书</h4><p>大佬们成立了一个公证机构叫数字证书认证机构（CA，Certificate Authority），公开密钥的发行者只要拿着自己的密钥到公证处认证，公证处检查合格后，就会给这个密钥签上自己的名字，客户端拿到这个签了名的公开密钥，可以进行验证。</p>
 <p><strong>疑惑的一点是，客户端拿到的公开密钥是如何认证的呢？如何确保认证过程的安全性呢？</strong></p>
-<p>答：客户端拿到公钥证书后，使用数字证书认证机构的公开密钥，向认证机构验证签名，而数字证书认证机构的密钥事先就植入到了浏览器里。</p>
+<p>答：客户端拿到公钥证书后，使用数字证书认证机构的公开密钥，向认证机构验证签名，而数字证书认证机构的密钥事先就植入到了浏览器里。即，CA对证书采用私钥加密，客户端用CA的公钥对加密的证书解密，若能够解密，则说明该证书确实采用了CA私钥加密，为合法证书。</p>
 <p>证书除了用来证明服务器的规范性外，还可确认服务器背后运营的企业是否真实存在。该类证书叫EV SSL（Extenden Validation SSL Certificate）证书。</p>
 <p>除了上述的服务器证书、EV SSL证书，还存在一种叫<strong>客户端证书</strong>的东西，服务器用来证明正在通信的客户端。但是这种证书有效嘛？</p>
 <p>客户端证书存在如下几个问题：</p>

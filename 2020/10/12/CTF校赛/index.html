@@ -20,30 +20,60 @@
     var CONFIG = {"hostname":"ymyforever.netlify.app","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="Live my life with passion!">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ymy is watching u!!!!">
-<meta property="og:url" content="https://ymyforever.netlify.app/index.html">
+  <meta name="description" content="电计1806 袁梦瑶 201886013  小白第一次打比赛了，真的好上头ORZ。 这次比赛做出了以下题目，根据题目的类型，写出题解。     签到题 a simple check in 200     派对邀请函 crypto 50   broken webpage 2 web 50   糟糕的调音师 misc 120   可靠的志愿时长查询网站（1） web 328   你的手机 apk 5">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CTF校赛">
+<meta property="og:url" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/index.html">
 <meta property="og:site_name" content="ymy is watching u!!!!">
-<meta property="og:description" content="Live my life with passion!">
+<meta property="og:description" content="电计1806 袁梦瑶 201886013  小白第一次打比赛了，真的好上头ORZ。 这次比赛做出了以下题目，根据题目的类型，写出题解。     签到题 a simple check in 200     派对邀请函 crypto 50   broken webpage 2 web 50   糟糕的调音师 misc 120   可靠的志愿时长查询网站（1） web 328   你的手机 apk 5">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012161320110.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012164520341.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012165531028.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012170709725.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012171122310.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013104828416.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013110733859.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013130500835.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013130539255.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013131348811.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013131739285.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013202541120.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014092312541.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014092553612.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014093358805.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014093133022.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014093621652.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013202956375.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012175950587.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201013204257896.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012180811172.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012181543581.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014074238940.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014075333571.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014080056973.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014081543235.png">
+<meta property="og:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201014081801445.png">
+<meta property="article:published_time" content="2020-10-12T07:53:00.000Z">
+<meta property="article:modified_time" content="2020-10-14T01:53:32.552Z">
 <meta property="article:author" content="ymy">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/forblog/blog/source/_posts/CTF校赛/image-20201012161320110.png">
 
-<link rel="canonical" href="https://ymyforever.netlify.app/">
+<link rel="canonical" href="https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>ymy is watching u!!!!</title>
+  <title>CTF校赛 | ymy is watching u!!!!</title>
   
 
 
@@ -184,9 +214,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -202,10 +233,9 @@
       <meta itemprop="name" content="ymy is watching u!!!!">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/" class="post-title-link" itemprop="url">CTF校赛</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          CTF校赛
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -235,7 +265,7 @@
     
     
       <a title="changyan" href="/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/10/12/CTF%E6%A0%A1%E8%B5%9B/" class="cy_cmt_count" data-xid="2020/10/12/CTF校赛/" itemprop="commentCount"></span>
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2020/10/12/CTF校赛/" itemprop="commentCount"></span>
       </a>
     
   </span>
@@ -251,7 +281,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <blockquote>
+        <blockquote>
 <p>电计1806</p>
 <p>袁梦瑶</p>
 <p>201886013</p>
@@ -502,793 +532,41 @@
 <p><em>签到题、问卷题此处忽略。。。</em></p>
 <h2 id="apk"><a href="#apk" class="headerlink" title="apk"></a>apk</h2><h3 id="1-你的手机"><a href="#1-你的手机" class="headerlink" title="1. 你的手机"></a>1. 你的手机</h3><p>有了flag为四位的提示后，一切变得简单……只需要安装apk文件，再随便输点啥，屏幕下部就会不断弹出四位字符，对，那就是flag。。。</p>
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/10/07/%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/07/%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" class="post-title-link" itemprop="url">自顶向下语法分析方法</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-07 16:40:36 / 修改时间：17:27:24" itemprop="dateCreated datePublished" datetime="2020-10-07T16:40:36+08:00">2020-10-07</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/10/07/%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/10/07/%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" class="cy_cmt_count" data-xid="2020/10/07/自顶向下语法分析方法/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/10/04/%E9%99%90%E6%97%B6%E7%A2%8E%E7%89%87/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/04/%E9%99%90%E6%97%B6%E7%A2%8E%E7%89%87/" class="post-title-link" itemprop="url">限时碎片</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-04 23:16:22 / 修改时间：23:21:14" itemprop="dateCreated datePublished" datetime="2020-10-04T23:16:22+08:00">2020-10-04</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/10/04/%E9%99%90%E6%97%B6%E7%A2%8E%E7%89%87/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/10/04/%E9%99%90%E6%97%B6%E7%A2%8E%E7%89%87/" class="cy_cmt_count" data-xid="2020/10/04/限时碎片/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>这是怎样的一种心情？这种孤独会持久吗？是我太敏感了吗？我觉得无所谓的事情，他们非常在意，所以群居要不断迁就，又是渴望孤独的一天，渴望自由的一天。</p>
-<p>人呢，是群居动物，不断抱团取暖，又不断陷入孤独。</p>
-<p>希望你心平气和，不变初心，在黯淡的岁月里，向着目标前进，加油！</p>
-<p>晚安呐！明天又是奋斗的一天。啾咪。</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/" class="post-title-link" itemprop="url">XSS的防御</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-02 14:36:32 / 修改时间：14:47:01" itemprop="dateCreated datePublished" datetime="2020-10-02T14:36:32+08:00">2020-10-02</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/10/02/XSS%E7%9A%84%E9%98%B2%E5%BE%A1/" class="cy_cmt_count" data-xid="2020/10/02/XSS的防御/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>由于XSS的攻击构造的复杂性，其防御技巧也是复杂的。但也是有一些万金油可以抵御大部分的XSS攻击。</p>
-<ul>
-<li>HttpOnly：抵御XSS后的Cookie劫持，禁止页面的JavaScript访问带有HttpOnly属性的Cookie。</li>
-<li>输入检查：即格式检查，用白名单指定输入格式，</li>
-<li>输出检查：使用编码或转义处理输出变量。</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/" class="post-title-link" itemprop="url">XSS构造技巧</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-10-02 14:21:12 / 修改时间：14:36:14" itemprop="dateCreated datePublished" datetime="2020-10-02T14:21:12+08:00">2020-10-02</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/10/02/XSS%E6%9E%84%E9%80%A0%E6%8A%80%E5%B7%A7/" class="cy_cmt_count" data-xid="2020/10/02/XSS构造技巧/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>XSS的攻击力是可见一斑的，但是在现实生活中，XSS的构造技巧是复杂的。是根据网站的各种特性、结构灵活构造的。常见的XSS构造方法有以下几种（假装自己是大佬，实则在搬运书上的内容哈哈哈！</p>
-<ul>
-<li>利用字符编码：根据网页的编码吃掉系统的转义符等，绕过安全检查。</li>
-<li>绕过长度限制：利用event、注释符绕过输入框的长度限制</li>
-<li>使用\<base>标签：\<base>标签用于指定页面上相对路径标签上的hosting地址，实现XSS攻击</li>
-<li>window.name妙用：摆脱同源策略的限制，实现跨域、跨页面数据传递</li>
-<li>Flash XSS：用户的Flash文件可以实施脚本攻击，Flash也会产生XSS漏洞。</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/09/30/%E5%9D%9A%E5%AE%9A/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/30/%E5%9D%9A%E5%AE%9A/" class="post-title-link" itemprop="url">坚定</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-09-30 19:27:28 / 修改时间：19:34:41" itemprop="dateCreated datePublished" datetime="2020-09-30T19:27:28+08:00">2020-09-30</time>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/09/30/%E5%9D%9A%E5%AE%9A/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/09/30/%E5%9D%9A%E5%AE%9A/" class="cy_cmt_count" data-xid="2020/09/30/坚定/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>陈学长说，切忌两天打鱼，三天晒网，一旦开始学习了，就要坚持下去。无论对待哪门课程，哪件事，都要坚持下去。</p>
-<p>另外一点是，要敢想、敢做，选择一条路，坚定地走下去。陈学长可以考清华（深圳），那我也可以！更何况，我还有很长的准备时间。</p>
-<p>现在最重要的两件事：</p>
-<ul>
-<li>大三课程学习</li>
-<li>考研数学</li>
-</ul>
-<p>希望在大三上结束的时候，可以过完一轮！加油！</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/" class="post-title-link" itemprop="url">跨站脚本攻击</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-28 09:29:34" itemprop="dateCreated datePublished" datetime="2020-09-28T09:29:34+08:00">2020-09-28</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-30 19:35:50" itemprop="dateModified" datetime="2020-09-30T19:35:50+08:00">2020-09-30</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/" class="cy_cmt_count" data-xid="2020/09/28/跨站脚本攻击/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <img src="/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/first.png" class title="This is an example image">
-<p>跨站脚本攻击乍一看是不是有点陌生？其实它就是我们经常听到的XSS，这一定是跨站脚本攻击的英文⑧，其实，跨站脚本攻击的英文是Cross Site Script，缩写应该为CSS，但是与层叠样式表的CSS有所雷同，因此就改为XSS！（X嘛！琦琦子说了的，无限可能！）</p>
-<p>在学习XSS之前，需要明确的是，什么是跨站脚本攻击？</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/28/%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/" class="post-title-link" itemprop="url">计算机网络测验1</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-18 14:27:20" itemprop="dateCreated datePublished" datetime="2020-09-18T14:27:20+08:00">2020-09-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-22 16:04:55" itemprop="dateModified" datetime="2020-09-22T16:04:55+08:00">2020-09-22</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/" class="cy_cmt_count" data-xid="2020/09/18/计算机网络测验1/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>今天来写一些计算机网络的测验题，看起来还是和平常的测验题很不一样的，遂打算记录在博客上。</p>
-<h2 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1. 问题描述"></a>1. 问题描述</h2><p>从源主机发送$8 \times 10^6$bit的长消息，传输过程中链路带宽为2Mbps，忽略<strong>传播</strong>、排队和处理延时。</p>
-<p>数据传输过程如下:</p>
-<pre class="mermaid">
-graph LR
-A(source) --> B(packet switch)
-B --> C(packet switch)
-C --> D(Destination)</pre>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%B5%8B%E9%AA%8C1/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/07/%E8%87%AA%E9%A1%B6%E5%90%91%E4%B8%8B%E8%AF%AD%E6%B3%95%E5%88%86%E6%9E%90%E6%96%B9%E6%B3%95/" rel="prev" title="自顶向下语法分析方法">
+      <i class="fa fa-chevron-left"></i> 自顶向下语法分析方法
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
   
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/09/16/Internet/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/09/16/Internet/" class="post-title-link" itemprop="url">Computer Networks and the Internet</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-09-16 09:20:48" itemprop="dateCreated datePublished" datetime="2020-09-16T09:20:48+08:00">2020-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-17 11:04:35" itemprop="dateModified" datetime="2020-09-17T11:04:35+08:00">2020-09-17</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/09/16/Internet/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/09/16/Internet/" class="cy_cmt_count" data-xid="2020/09/16/Internet/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>自定向下学习笔记</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/09/16/Internet/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://ymyforever.netlify.app/2020/08/30/HTTP%E5%8D%8F%E8%AE%AE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="ymy">
-      <meta itemprop="description" content="Live my life with passion!">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ymy is watching u!!!!">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/30/HTTP%E5%8D%8F%E8%AE%AE/" class="post-title-link" itemprop="url">HTTP协议</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-08-30 18:03:10" itemprop="dateCreated datePublished" datetime="2020-08-30T18:03:10+08:00">2020-08-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-07 08:49:30" itemprop="dateModified" datetime="2020-10-07T08:49:30+08:00">2020-10-07</time>
-              </span>
-
-          
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    
-      <a title="changyan" href="/2020/08/30/HTTP%E5%8D%8F%E8%AE%AE/#SOHUCS" itemprop="discussionUrl">
-        <span id="url::https://ymyforever.netlify.app/2020/08/30/HTTP%E5%8D%8F%E8%AE%AE/" class="cy_cmt_count" data-xid="2020/08/30/HTTP协议/" itemprop="commentCount"></span>
-      </a>
-    
-  </span>
-  
-  
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="1-网络基础"><a href="#1-网络基础" class="headerlink" title="1. 网络基础"></a>1. 网络基础</h2><p>三项WWW构建技术：</p>
-<ul>
-<li>超文本标记语言HTML</li>
-<li>文档传递协议HTTP</li>
-<li>指定文档地址的URL</li>
-</ul>
-<h3 id="1-1-TCP-IP"><a href="#1-1-TCP-IP" class="headerlink" title="1.1 TCP/IP"></a>1.1 TCP/IP</h3><p>TCP/IP是互联网相关的各类协议族的总称。按照层次可分为如下四层</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2020/08/30/HTTP%E5%8D%8F%E8%AE%AE/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="SOHUCS"></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -1335,6 +613,7 @@ C --> D(Destination)</pre>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#crypto"><span class="nav-number">1.</span> <span class="nav-text">crypto</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%B4%BE%E5%AF%B9%E9%82%80%E8%AF%B7%E5%87%BD"><span class="nav-number">1.1.</span> <span class="nav-text">1. 派对邀请函</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-very-easy"><span class="nav-number">1.2.</span> <span class="nav-text">2. very_easy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-very-easy2"><span class="nav-number">1.3.</span> <span class="nav-text">3. very_easy2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E8%A7%A3%E6%95%91djinni"><span class="nav-number">1.4.</span> <span class="nav-text">4. 解救djinni</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#web"><span class="nav-number">2.</span> <span class="nav-text">web</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-broken-webpage-2"><span class="nav-number">2.1.</span> <span class="nav-text">1. broken webpage 2</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%B5%81%E9%87%8F%E5%91%8A%E6%80%A5"><span class="nav-number">2.2.</span> <span class="nav-text">2.流量告急</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E5%8F%AF%E9%9D%A0%E7%9A%84%E5%BF%97%E6%84%BF%E6%97%B6%E9%95%BF%E6%9F%A5%E8%AF%A2%E7%BD%91%E7%AB%99%EF%BC%881%EF%BC%89"><span class="nav-number">2.3.</span> <span class="nav-text">3. 可靠的志愿时长查询网站（1）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E5%8F%AF%E9%9D%A0%E7%9A%84%E5%BF%97%E6%84%BF%E6%97%B6%E9%95%BF%E6%9F%A5%E8%AF%A2%E7%BD%91%E7%AB%99-2"><span class="nav-number">2.4.</span> <span class="nav-text">4. 可靠的志愿时长查询网站(2)</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#PWN"><span class="nav-number">3.</span> <span class="nav-text">PWN</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-babyrop"><span class="nav-number">3.1.</span> <span class="nav-text">1. babyrop</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#reverse"><span class="nav-number">4.</span> <span class="nav-text">reverse</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%A7%8B%E5%A4%A9%E7%9A%84%E7%AC%AC%E4%B8%80%E9%81%93%E9%80%86%E5%90%91"><span class="nav-number">4.1.</span> <span class="nav-text">1. 秋天的第一道逆向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E5%BD%92%E6%9D%A5%E7%9A%84%E8%9F%92%E8%9B%87"><span class="nav-number">4.2.</span> <span class="nav-text">2. 归来的蟒蛇</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#misc"><span class="nav-number">5.</span> <span class="nav-text">misc</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-Guess-The-Flag"><span class="nav-number">5.1.</span> <span class="nav-text">1. Guess The Flag</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%B3%9F%E7%B3%95%E7%9A%84%E8%B0%83%E9%9F%B3%E5%B8%88"><span class="nav-number">5.2.</span> <span class="nav-text">2. 糟糕的调音师</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-What-remains-of-white-pagoda"><span class="nav-number">5.3.</span> <span class="nav-text">3.What remains of white pagoda</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%99%BD%E7%A5%9E%E8%AF%9D%EF%BC%9A%E6%82%9F%E8%83%BD"><span class="nav-number">5.4.</span> <span class="nav-text">4. 白神话：悟能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E9%9B%B6%E5%8D%A1%E6%94%BB%E7%95%A5%E7%BD%91"><span class="nav-number">5.5.</span> <span class="nav-text">5. 零卡攻略网</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E4%BF%B8%E4%BF%B8%E4%BC%B2-%E8%B4%AD%E7%BE%8E%E7%97%85"><span class="nav-number">5.6.</span> <span class="nav-text">6. 俸俸伲 购美病</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-%E5%81%B7%E6%9D%A5%E7%9A%84%E5%AF%86%E7%A0%81"><span class="nav-number">5.7.</span> <span class="nav-text">7. 偷来的密码</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#apk"><span class="nav-number">6.</span> <span class="nav-text">apk</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E4%BD%A0%E7%9A%84%E6%89%8B%E6%9C%BA"><span class="nav-number">6.1.</span> <span class="nav-text">1. 你的手机</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1455,64 +734,22 @@ if (document.querySelectorAll('pre.mermaid').length) {
   
 
   
-      
-
-<script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      loader: {
-        source: {
-          '[tex]/amsCd': '[tex]/amscd',
-          '[tex]/AMScd': '[tex]/amscd'
-        }
-      },
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          findScript: [10, doc => {
-            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
-              const display = !!node.type.match(/; *mode=display/);
-              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
-              const text = document.createTextNode('');
-              node.parentNode.replaceChild(text, node);
-              math.start = {node: text, delim: '', n: 0};
-              math.end = {node: text, delim: '', n: 0};
-              doc.math.push(math);
-            });
-          }, '', false],
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              let target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
-      }
-    };
-    (function () {
-      var script = document.createElement('script');
-      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
-      script.defer = true;
-      document.head.appendChild(script);
-    })();
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.texReset();
-    MathJax.typeset();
-  }
-</script>
-
-    
 
   
 
-  <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cyv1UI8cx"></script>
-
+  <script>
+  NexT.utils.loadComments(document.querySelector('#SOHUCS'), () => {
+    var appid = 'cyv1UI8cx';
+    var conf = 'f9fab9e56297b3eb7ad99b517dc321a7';
+    var width = window.innerWidth || document.documentElement.clientWidth;
+    if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>');
+    } else {
+      var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})});
+    }
+  });
+  </script>
+  <script src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
 
 </body>
 </html>
